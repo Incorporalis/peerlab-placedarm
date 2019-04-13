@@ -16,7 +16,7 @@ class SearchViperPresenter: ISearchViperModuleInput, ISearchViperViewOutput, ISe
     let interactor: ISearchViperInteractorInput
     let router: ISearchViperRouterInput
     var elements = [IRepositoryCellViewModel]()
-
+    var rawData: [IRepository]?
 
     init(with interactor: ISearchViperInteractorInput, router: ISearchViperRouterInput) {
         self.interactor = interactor
@@ -51,6 +51,7 @@ class SearchViperPresenter: ISearchViperModuleInput, ISearchViperViewOutput, ISe
     func didLoadData(with repositories:[IRepository]?) {
         if let reps = repositories {
             elements = reps.map { RepositoryCellViewModel(with: $0) }
+            rawData = reps
             view?.hideHUD()
             view?.refreshUI()
         }
@@ -65,8 +66,10 @@ class SearchViperPresenter: ISearchViperModuleInput, ISearchViperViewOutput, ISe
     }
 
     func viewDidPressDetailsButton(with index: Int) {
-        let models: [Any] = [index]
-		router.showDetails(for: models[index])
+        guard let repository = rawData?[index] else {
+            fatalError()
+        }
+		router.showDetails(for: repository)
     }
 
 }

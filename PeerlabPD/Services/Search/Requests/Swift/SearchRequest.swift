@@ -1,5 +1,5 @@
 //
-//  SwiftRequest.swift
+//  SearchRequest.swift
 //  PeerlabPD
 //
 //  Created by Ivan.Kramarenko on 11.09.2018.
@@ -8,12 +8,12 @@
 
 import Foundation
 
-class SwiftRequestOpeation: IRequestOperation {
+class SearchRequestOpeation: IRequestOperation {
 
     typealias ResponseModel = SwiftRequestResponseModel
 
     var request: IRequest {
-        return SwiftRequest()
+        return SearchRequest()
     }
 
     struct SwiftRequestResponseModel: IServerResponseModel {
@@ -30,7 +30,7 @@ class SwiftRequestOpeation: IRequestOperation {
 
 }
 
-class SwiftRequest: IRequest {
+class SearchRequest: IRequest {
 
     var path: String {
         return "search/repositories"

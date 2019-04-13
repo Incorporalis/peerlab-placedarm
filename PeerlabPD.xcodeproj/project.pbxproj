@@ -29,7 +29,7 @@
 		EA3C222C21471D10006519DE /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C222B21471D10006519DE /* Request.swift */; };
 		EA3C222E21471D1B006519DE /* NetworkDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C222D21471D1B006519DE /* NetworkDispatcher.swift */; };
 		EA3C223421471FD8006519DE /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C223321471FD8006519DE /* SearchService.swift */; };
-		EA3C223621471FE8006519DE /* SwiftRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C223521471FE8006519DE /* SwiftRequest.swift */; };
+		EA3C223621471FE8006519DE /* SearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C223521471FE8006519DE /* SearchRequest.swift */; };
 		EA3C224421472253006519DE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C223A21472252006519DE /* BaseViewController.swift */; };
 		EA3C224521472253006519DE /* BaseRequestOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C223C21472252006519DE /* BaseRequestOperation.swift */; };
 		EA3C224721472253006519DE /* RouterAsembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C223F21472252006519DE /* RouterAsembly.swift */; };
@@ -47,6 +47,11 @@
 		EA9EB0F32233D2CF002AE18C /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9EB0F22233D2CF002AE18C /* Store.swift */; };
 		EA9EB0F52233D66E002AE18C /* ReduxVCPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9EB0F42233D66E002AE18C /* ReduxVCPresenter.swift */; };
 		EA9EB0F82233DA57002AE18C /* RepositoriesLoadingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9EB0F72233DA57002AE18C /* RepositoriesLoadingController.swift */; };
+		EAB2A1AF22614C7900FA8AAF /* ItemViperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2A1AC22614B6500FA8AAF /* ItemViperViewController.swift */; };
+		EAB2A1B022614C7C00FA8AAF /* ItemViperAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2A1AB22614B6200FA8AAF /* ItemViperAssembly.swift */; };
+		EAB2A1B122614C7F00FA8AAF /* ItemViperRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2A1AA22614B5700FA8AAF /* ItemViperRouter.swift */; };
+		EAB2A1B322614C8500FA8AAF /* ItemViperInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2A1AD22614B6A00FA8AAF /* ItemViperInteractor.swift */; };
+		EAB2A1B422614D8700FA8AAF /* ItemViperPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2A1AE22614B6D00FA8AAF /* ItemViperPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,7 +91,7 @@
 		EA3C222B21471D10006519DE /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		EA3C222D21471D1B006519DE /* NetworkDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDispatcher.swift; sourceTree = "<group>"; };
 		EA3C223321471FD8006519DE /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
-		EA3C223521471FE8006519DE /* SwiftRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftRequest.swift; sourceTree = "<group>"; };
+		EA3C223521471FE8006519DE /* SearchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRequest.swift; sourceTree = "<group>"; };
 		EA3C223A21472252006519DE /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		EA3C223C21472252006519DE /* BaseRequestOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRequestOperation.swift; sourceTree = "<group>"; };
 		EA3C223F21472252006519DE /* RouterAsembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterAsembly.swift; sourceTree = "<group>"; };
@@ -104,6 +109,11 @@
 		EA9EB0F22233D2CF002AE18C /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		EA9EB0F42233D66E002AE18C /* ReduxVCPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxVCPresenter.swift; sourceTree = "<group>"; };
 		EA9EB0F72233DA57002AE18C /* RepositoriesLoadingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesLoadingController.swift; sourceTree = "<group>"; };
+		EAB2A1AA22614B5700FA8AAF /* ItemViperRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViperRouter.swift; sourceTree = "<group>"; };
+		EAB2A1AB22614B6200FA8AAF /* ItemViperAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViperAssembly.swift; sourceTree = "<group>"; };
+		EAB2A1AC22614B6500FA8AAF /* ItemViperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViperViewController.swift; sourceTree = "<group>"; };
+		EAB2A1AD22614B6A00FA8AAF /* ItemViperInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViperInteractor.swift; sourceTree = "<group>"; };
+		EAB2A1AE22614B6D00FA8AAF /* ItemViperPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViperPresenter.swift; sourceTree = "<group>"; };
 		F08698A4224B7B5E2B233FCB /* Pods-PeerlabPD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeerlabPD.release.xcconfig"; path = "Pods/Target Support Files/Pods-PeerlabPD/Pods-PeerlabPD.release.xcconfig"; sourceTree = "<group>"; };
 		F9AD2DBE372E69104DFF22BE /* Pods_PeerlabPD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PeerlabPD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -214,7 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				EA9EB0E82233C98D002AE18C /* ReduxModule */,
-				EA7B5F8921E9F608008A2809 /* SearchViper */,
+				EAB2A1A322614B2800FA8AAF /* Viper */,
 				EA3C224E21484180006519DE /* Search */,
 			);
 			path = Screens;
@@ -294,7 +304,7 @@
 		EA3C223221471F96006519DE /* Swift */ = {
 			isa = PBXGroup;
 			children = (
-				EA3C223521471FE8006519DE /* SwiftRequest.swift */,
+				EA3C223521471FE8006519DE /* SearchRequest.swift */,
 			);
 			path = Swift;
 			sourceTree = "<group>";
@@ -464,6 +474,67 @@
 				EA9EB0F72233DA57002AE18C /* RepositoriesLoadingController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EAB2A1A322614B2800FA8AAF /* Viper */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A1A422614B3600FA8AAF /* ItemViper */,
+				EA7B5F8921E9F608008A2809 /* SearchViper */,
+			);
+			path = Viper;
+			sourceTree = "<group>";
+		};
+		EAB2A1A422614B3600FA8AAF /* ItemViper */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A1A922614B4C00FA8AAF /* Router */,
+				EAB2A1A722614B4C00FA8AAF /* Assembly */,
+				EAB2A1A522614B4C00FA8AAF /* View */,
+				EAB2A1A622614B4C00FA8AAF /* Interactor */,
+				EAB2A1A822614B4C00FA8AAF /* Presenter */,
+			);
+			path = ItemViper;
+			sourceTree = "<group>";
+		};
+		EAB2A1A522614B4C00FA8AAF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A1AC22614B6500FA8AAF /* ItemViperViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EAB2A1A622614B4C00FA8AAF /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A1AD22614B6A00FA8AAF /* ItemViperInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		EAB2A1A722614B4C00FA8AAF /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A1AB22614B6200FA8AAF /* ItemViperAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		EAB2A1A822614B4C00FA8AAF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A1AE22614B6D00FA8AAF /* ItemViperPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		EAB2A1A922614B4C00FA8AAF /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A1AA22614B5700FA8AAF /* ItemViperRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		F284A168E4E08ECC3A5E53C6 /* Frameworks */ = {
@@ -638,6 +709,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAB2A1AF22614C7900FA8AAF /* ItemViperViewController.swift in Sources */,
+				EAB2A1B422614D8700FA8AAF /* ItemViperPresenter.swift in Sources */,
 				EA9EB0EF2233CB39002AE18C /* Command.swift in Sources */,
 				EA3C223421471FD8006519DE /* SearchService.swift in Sources */,
 				EA2B0ECD2233C0F90087295A /* Action.swift in Sources */,
@@ -645,6 +718,7 @@
 				EA3C224421472253006519DE /* BaseViewController.swift in Sources */,
 				EA9EB0F52233D66E002AE18C /* ReduxVCPresenter.swift in Sources */,
 				EA3C222321471774006519DE /* User.swift in Sources */,
+				EAB2A1B322614C8500FA8AAF /* ItemViperInteractor.swift in Sources */,
 				EA3C22552148422C006519DE /* RepositoryCellViewModel.swift in Sources */,
 				EA2B0ED12233C1810087295A /* RepositoriesFailLoading.swift in Sources */,
 				EA7B5F9621E9F7F9008A2809 /* SearchViperAssembly.swift in Sources */,
@@ -654,6 +728,7 @@
 				EA3C224521472253006519DE /* BaseRequestOperation.swift in Sources */,
 				EA2B0ED32233C1C30087295A /* RepositoriesStartLoading.swift in Sources */,
 				EA3C21FB21470F31006519DE /* AppDelegate.swift in Sources */,
+				EAB2A1B122614C7F00FA8AAF /* ItemViperRouter.swift in Sources */,
 				EA2B0ECA2233BFA80087295A /* StateLoading.swift in Sources */,
 				EA2B0EC62233BF3F0087295A /* State.swift in Sources */,
 				EA3C224D21472B1A006519DE /* UIAlerController.swift in Sources */,
@@ -671,7 +746,8 @@
 				EA3C224721472253006519DE /* RouterAsembly.swift in Sources */,
 				EA3C22532148420D006519DE /* RepositoryTableViewCell.swift in Sources */,
 				EA7B5F9221E9F6FE008A2809 /* SearchViperInteractor.swift in Sources */,
-				EA3C223621471FE8006519DE /* SwiftRequest.swift in Sources */,
+				EA3C223621471FE8006519DE /* SearchRequest.swift in Sources */,
+				EAB2A1B022614C7C00FA8AAF /* ItemViperAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

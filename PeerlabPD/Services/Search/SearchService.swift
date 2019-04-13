@@ -29,7 +29,7 @@ class SearchService: ISearchService {
 
     var getRepositoriesSignal: Observable<[IRepository]> {
         let signal = Observable<[IRepository]>.create() { observer -> Disposable in
-            let swiftRequest = SwiftRequestOpeation()
+            let swiftRequest = SearchRequestOpeation()
             do {
                 try swiftRequest.execute(in: self.dispatcher) {[weak self] (result) in
                     switch (result) {

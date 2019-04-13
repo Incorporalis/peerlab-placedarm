@@ -10,6 +10,8 @@ import UIKit
 
 protocol ISearchViperViewInput: class, ShowActivityController, ShowAlertController {
 
+    var navigationController: UINavigationController? { get }
+
     func config(with output: ISearchViperViewOutput)
     func refreshUI()
 
@@ -21,6 +23,7 @@ protocol ISearchViperViewOutput: class {
 
 	func refreshData()
     func viewIsReady()
+    func viewDidPressDetailsButton(with index: Int)
 
 }
 
@@ -51,6 +54,7 @@ class SearchViperViewController: BaseViewController, ISearchViperViewInput {
 
     private func updateTableView() {
         tableView.dataSource = self
+        tableView.delegate = self
 
         //remove standard header offset
         var frame = CGRect.zero
@@ -90,6 +94,14 @@ extension SearchViperViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifiers.repository.rawValue) as! RepositoryTableViewCell
         cell.configure(with: output.elements[indexPath.row])
         return cell
+    }
+
+}
+
+extension SearchViperViewController: UITableViewDelegate {
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        output.viewDidPressDetailsButton(with: indexPath.row)
     }
 
 }

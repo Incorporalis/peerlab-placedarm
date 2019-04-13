@@ -18,7 +18,7 @@ class SearchViperAssembly {
 
     func createModule(with view: ISearchViperViewInput, dependencies: RouterDependencies) {
         let interactor = SearchViperInteractor(with: dependencies.searchService)
-        let router = SearchViperRouterInput()
+        let router = SearchViperRouter(with: dependencies, view: view)
 		let presenter = SearchViperPresenter(with: interactor, router: router)
         presenter.configure(with: view)
     }

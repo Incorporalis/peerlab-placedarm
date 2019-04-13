@@ -21,8 +21,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let store = Store()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-//        dependencies.routerAssembly.assembleMainScreenAsRoot(with: dependencies)
+        dependencies.routerAssembly.assembleMainScreenAsRoot(with: dependencies)
+//        startRedux()
 
+
+        return true
+    }
+
+    func startRedux() {
         guard let vc = window?.rootViewController as? ReduxViewController else { fatalError() }
         let presenter = ReduxVCPresenter(render: { props in
             DispatchQueue.main.async {
@@ -38,8 +44,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         )
 
         store.addObserver(loader.handle)
-
-        return true
     }
 
     func loadDependencies() -> RouterDependencies {

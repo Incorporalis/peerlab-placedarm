@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6LS-pW-crF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6Sf-gs-1eG">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.43"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,10 +23,10 @@
             </objects>
             <point key="canvasLocation" x="-646" y="134"/>
         </scene>
-        <!--Repositories-->
+        <!--Repositories MVVM-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="ViewController" title="Repositories" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="IvanKramCodeIT" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" title="Repositories" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" userLabel="Repositories MVVM" customClass="ViewController" customModule="PeerlabPD" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -36,7 +36,7 @@
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RepositoryTableViewCell" rowHeight="133" id="Seh-aj-Uwp" customClass="RepositoryTableViewCell" customModule="IvanKramCodeIT" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RepositoryTableViewCell" rowHeight="133" id="Seh-aj-Uwp" customClass="RepositoryTableViewCell" customModule="PeerlabPD" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="55.5" width="375" height="133"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Seh-aj-Uwp" id="HDW-Jj-Xy0">
@@ -126,20 +126,20 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
-        <!--Repositories-->
+        <!--Repositories Viper-->
         <scene sceneID="cDP-gj-dcd">
             <objects>
-                <viewController storyboardIdentifier="SearchViperViewController" title="Repositories" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tMF-DR-ZXa" customClass="SearchViperViewController" customModule="IvanKramCodeIT" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchViperViewController" title="Repositories" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tMF-DR-ZXa" userLabel="Repositories Viper" customClass="SearchViperViewController" customModule="PeerlabPD" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cKk-Yf-9ca">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="H08-nI-Qwo">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="H08-nI-Qwo">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RepositoryTableViewCell" rowHeight="133" id="FaD-RS-yoV" customClass="RepositoryTableViewCell" customModule="IvanKramCodeIT" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="RepositoryTableViewCell" rowHeight="133" id="FaD-RS-yoV" customClass="RepositoryTableViewCell" customModule="PeerlabPD" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="55.5" width="375" height="133"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FaD-RS-yoV" id="OCs-ZE-XmU">
@@ -229,10 +229,85 @@
             </objects>
             <point key="canvasLocation" x="793" y="134"/>
         </scene>
-        <!--Repositories-->
+        <!--Item Viper View Controller-->
+        <scene sceneID="wdM-bG-yzs">
+            <objects>
+                <viewController restorationIdentifier="ItemViperViewController" storyboardIdentifier="ItemViperViewController" id="uUI-Hc-xaK" customClass="ItemViperViewController" customModule="PeerlabPD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RxN-xj-PvI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eWB-TY-lqC">
+                                <rect key="frame" x="16" y="36" width="343" height="60"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="SEl-zr-MfU">
+                                        <rect key="frame" x="8" y="8" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="SEl-zr-MfU" secondAttribute="height" multiplier="1:1" id="Ia5-Oa-nXG"/>
+                                            <constraint firstAttribute="width" constant="44" id="St7-Ti-ZFN"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;Name&gt;" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Inl-kU-yYF">
+                                        <rect key="frame" x="60" y="8" width="275" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="&lt;Description&gt;" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEd-PO-BPt">
+                                        <rect key="frame" x="60" y="31.5" width="275" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="16"/>
+                                        <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Inl-kU-yYF" firstAttribute="top" secondItem="eWB-TY-lqC" secondAttribute="top" constant="8" id="46f-lX-wwg"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="SEl-zr-MfU" secondAttribute="bottom" constant="8" id="6lH-iO-UlF"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="DEd-PO-BPt" secondAttribute="bottom" constant="8" id="8SL-cJ-f8N"/>
+                                    <constraint firstAttribute="trailing" secondItem="Inl-kU-yYF" secondAttribute="trailing" constant="8" id="DvH-Tx-KVA"/>
+                                    <constraint firstItem="Inl-kU-yYF" firstAttribute="leading" secondItem="SEl-zr-MfU" secondAttribute="trailing" constant="8" id="KYX-58-X4b"/>
+                                    <constraint firstItem="DEd-PO-BPt" firstAttribute="leading" secondItem="Inl-kU-yYF" secondAttribute="leading" id="TeQ-2H-z9n"/>
+                                    <constraint firstItem="DEd-PO-BPt" firstAttribute="trailing" secondItem="Inl-kU-yYF" secondAttribute="trailing" id="YiW-UH-1AM"/>
+                                    <constraint firstAttribute="height" priority="200" id="csn-q3-KDv"/>
+                                    <constraint firstItem="DEd-PO-BPt" firstAttribute="top" secondItem="Inl-kU-yYF" secondAttribute="bottom" constant="2" id="doa-Ee-6kI"/>
+                                    <constraint firstItem="SEl-zr-MfU" firstAttribute="top" secondItem="eWB-TY-lqC" secondAttribute="top" constant="8" id="nXZ-Ze-eyt"/>
+                                    <constraint firstItem="SEl-zr-MfU" firstAttribute="leading" secondItem="eWB-TY-lqC" secondAttribute="leading" constant="8" id="v6X-SU-q1C"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eWB-TY-lqC" firstAttribute="leading" secondItem="fQg-J6-0mK" secondAttribute="leading" constant="16" id="FR0-qE-Bjj"/>
+                            <constraint firstItem="eWB-TY-lqC" firstAttribute="top" secondItem="fQg-J6-0mK" secondAttribute="top" constant="16" id="GR4-7v-UYn"/>
+                            <constraint firstItem="fQg-J6-0mK" firstAttribute="trailing" secondItem="eWB-TY-lqC" secondAttribute="trailing" constant="16" id="QpJ-Ce-iuA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fQg-J6-0mK"/>
+                    </view>
+                    <connections>
+                        <outlet property="avatarView" destination="SEl-zr-MfU" id="orj-lY-M6u"/>
+                        <outlet property="descriptionLbl" destination="DEd-PO-BPt" id="jsQ-0L-nVP"/>
+                        <outlet property="nameLbl" destination="Inl-kU-yYF" id="YtP-zm-P4i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WnI-me-aSs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="793" y="789"/>
+        </scene>
+        <!--Repositories REDUX-->
         <scene sceneID="GaY-7I-eM5">
             <objects>
-                <viewController storyboardIdentifier="ReduxViewController" title="Repositories" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6LS-pW-crF" customClass="ReduxViewController" customModule="IvanKramCodeIT" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ReduxViewController" title="Repositories" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6LS-pW-crF" userLabel="Repositories REDUX" customClass="ReduxViewController" customModule="PeerlabPD" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q5M-dH-4MO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -242,7 +317,7 @@
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RepositoryTableViewCell" rowHeight="133" id="be4-XV-bd5" customClass="RepositoryTableViewCell" customModule="IvanKramCodeIT" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RepositoryTableViewCell" rowHeight="133" id="be4-XV-bd5" customClass="RepositoryTableViewCell" customModule="PeerlabPD" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="55.5" width="375" height="133"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="be4-XV-bd5" id="G6g-gM-8u2">
@@ -330,10 +405,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Slm-Uo-Ijl" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-164" y="931"/>
+            <point key="canvasLocation" x="1470" y="134"/>
         </scene>
     </scenes>
     <resources>
-        <image name="profile_placeholder" width="140" height="140"/>
+        <image name="profile_placeholder" width="280" height="280"/>
     </resources>
 </document>
