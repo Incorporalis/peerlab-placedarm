@@ -1,0 +1,25 @@
+{
+  "appParams": {
+    "peerlabOne": { 
+      "scheme": "PeerlabPD",
+      "repositoryIndex": 6,
+      "repositoryName": "Swift",
+      "languages": [
+        "en-US",
+        "uk",
+        "ru",
+        "pl",
+        "hu",
+        "nl"
+      ]
+    },
+    "peerlabTwo": { 
+      "scheme": "PeerlabPDObjC",
+      "repositoryIndex": 3,
+      "repositoryName": "Objective-C",
+      "languages": [
+        "pl"
+      ]
+    }
+  }
+}

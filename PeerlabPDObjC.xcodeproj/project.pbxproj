@@ -1,0 +1,1395 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46F89BF45D22306439C0607F /* Pods_PeerlabPDObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73FF310B0C63560804FF2F98 /* Pods_PeerlabPDObjC.framework */; };
+		EA2B0EDC2233C52F0087295A /* PeerlabDPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2B0EDB2233C52F0087295A /* PeerlabDPTests.swift */; };
+		EA2B0EE42233C5640087295A /* RepositoriesLoadingTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2B0EE32233C5640087295A /* RepositoriesLoadingTestCase.swift */; };
+		EA794C1D2261ED77002E58B3 /* PeerlabPDObjCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA794C1C2261ED77002E58B3 /* PeerlabPDObjCUITests.swift */; };
+		EA794C352261EDE3002E58B3 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA794C342261EDE3002E58B3 /* SnapshotHelper.swift */; };
+		EAB2A2632261E33D00FA8AAF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2A1D32261E33D00FA8AAF /* BaseViewController.swift */; };
+		EAB2A2642261E33D00FA8AAF /* UIAlerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2A1D52261E33D00FA8AAF /* UIAlerController.swift */; };
+		EAB2A2652261E33D00FA8AAF /* RouterAsembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2A1D72261E33D00FA8AAF /* RouterAsembly.swift */; };
+		EAB2A2662261E33D00FA8AAF /* BaseRequestOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2A1D92261E33D00FA8AAF /* BaseRequestOperation.swift */; };
+		EAB2A2672261E33D00FA8AAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A1DB2261E33D00FA8AAF /* Assets.xcassets */; };
+		EAB2A2682261E33D00FA8AAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A1DC2261E33D00FA8AAF /* LaunchScreen.storyboard */; };
+		EAB2A2692261E33D00FA8AAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A1DE2261E33D00FA8AAF /* Main.storyboard */; };
+		EAB2A26A2261E33D00FA8AAF /* iTunesArtwork@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A1E22261E33D00FA8AAF /* iTunesArtwork@1x.png */; };
+		EAB2A26B2261E33D00FA8AAF /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A1E32261E33D00FA8AAF /* Icon-Small-50@2x.png */; };
+		EAB2A26C2261E33D00FA8AAF /* Icon-App-76x76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A1E52261E33D00FA8AAF /* Icon-App-76x76@2x.png */; };
+		EAB2A26D2261E33D00FA8AAF /* Icon-App-29x29@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A1E62261E33D00FA8AAF /* Icon-App-29x29@1x.png */; };
+		EAB2A26E2261E33D00FA8AAF /* Icon-App-60x60@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A1E72261E33D00FA8AAF /* Icon-App-60x60@1x.png */; };
+		EAB2A26F2261E33D00FA8AAF /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A1E82261E33D00FA8AAF /* Icon.png */; };
+		EAB2A2702261E33D00FA8AAF /* Icon-App-40x40@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A1E92261E33D00FA8AAF /* Icon-App-40x40@1x.png */; };
+		EAB2A2712261E33D00FA8AAF /* Icon-App-76x76@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A1EA2261E33D00FA8AAF /* Icon-App-76x76@3x.png */; };
+		EAB2A2722261E33D00FA8AAF /* Icon-App-20x20@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A1EB2261E33D00FA8AAF /* Icon-App-20x20@1x.png */; };
+		EAB2A2732261E33D00FA8AAF /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A1EC2261E33D00FA8AAF /* Icon-60.png */; };
+		EAB2A2742261E33D00FA8AAF /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A1ED2261E33D00FA8AAF /* Icon-72.png */; };
+		EAB2A2752261E33D00FA8AAF /* Icon-App-83.5x83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A1EE2261E33D00FA8AAF /* Icon-App-83.5x83.5@2x.png */; };
+		EAB2A2762261E33D00FA8AAF /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A1EF2261E33D00FA8AAF /* Icon-72@2x.png */; };
+		EAB2A2772261E33D00FA8AAF /* Icon-App-20x20@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A1F02261E33D00FA8AAF /* Icon-App-20x20@3x.png */; };
+		EAB2A2782261E33D00FA8AAF /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A1F12261E33D00FA8AAF /* Icon@2x.png */; };
+		EAB2A2792261E33D00FA8AAF /* ItunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A1F22261E33D00FA8AAF /* ItunesArtwork@2x.png */; };
+		EAB2A27B2261E33D00FA8AAF /* Icon-App-20x20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A1F42261E33D00FA8AAF /* Icon-App-20x20@2x.png */; };
+		EAB2A27C2261E33D00FA8AAF /* Icon-App-29x29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A1F52261E33D00FA8AAF /* Icon-App-29x29@3x.png */; };
+		EAB2A27D2261E33D00FA8AAF /* Icon-App-40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A1F62261E33D00FA8AAF /* Icon-App-40x40@2x.png */; };
+		EAB2A27E2261E33D00FA8AAF /* Icon-App-60x60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A1F72261E33D00FA8AAF /* Icon-App-60x60@3x.png */; };
+		EAB2A27F2261E33D00FA8AAF /* Icon-App-60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A1F82261E33D00FA8AAF /* Icon-App-60x60@2x.png */; };
+		EAB2A2802261E33D00FA8AAF /* Icon-App-76x76@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A1F92261E33D00FA8AAF /* Icon-App-76x76@1x.png */; };
+		EAB2A2812261E33D00FA8AAF /* Icon-App-40x40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A1FA2261E33D00FA8AAF /* Icon-App-40x40@3x.png */; };
+		EAB2A2822261E33D00FA8AAF /* Icon-App-29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A1FB2261E33D00FA8AAF /* Icon-App-29x29@2x.png */; };
+		EAB2A2832261E33D00FA8AAF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A1FC2261E33D00FA8AAF /* README.md */; };
+		EAB2A2842261E33D00FA8AAF /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A1FD2261E33D00FA8AAF /* iTunesArtwork@2x.png */; };
+		EAB2A2852261E33D00FA8AAF /* iTunesArtwork@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A1FE2261E33D00FA8AAF /* iTunesArtwork@3x.png */; };
+		EAB2A2862261E33D00FA8AAF /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A1FF2261E33D00FA8AAF /* Icon-Small-50.png */; };
+		EAB2A2872261E33D00FA8AAF /* icon-messages-app-iPhone-60x45@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A2012261E33D00FA8AAF /* icon-messages-app-iPhone-60x45@1x.png */; };
+		EAB2A2882261E33D00FA8AAF /* icon-messages-app-iPadAir-67x50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A2022261E33D00FA8AAF /* icon-messages-app-iPadAir-67x50@2x.png */; };
+		EAB2A2892261E33D00FA8AAF /* icon-messages-app-store-1024x768.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A2032261E33D00FA8AAF /* icon-messages-app-store-1024x768.png */; };
+		EAB2A28A2261E33D00FA8AAF /* icon-messages-transcript-32x24@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A2042261E33D00FA8AAF /* icon-messages-transcript-32x24@3x.png */; };
+		EAB2A28B2261E33D00FA8AAF /* icon-messages-app-27x20@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A2052261E33D00FA8AAF /* icon-messages-app-27x20@1x.png */; };
+		EAB2A28C2261E33D00FA8AAF /* icon-messages-transcript-32x24@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A2062261E33D00FA8AAF /* icon-messages-transcript-32x24@2x.png */; };
+		EAB2A28D2261E33D00FA8AAF /* icon-messages-app-27x20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A2072261E33D00FA8AAF /* icon-messages-app-27x20@2x.png */; };
+		EAB2A28E2261E33D00FA8AAF /* icon-messages-transcript-32x24@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A2082261E33D00FA8AAF /* icon-messages-transcript-32x24@1x.png */; };
+		EAB2A28F2261E33D00FA8AAF /* icon-messages-app-27x20@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A2092261E33D00FA8AAF /* icon-messages-app-27x20@3x.png */; };
+		EAB2A2902261E33D00FA8AAF /* icon-messages-app-iPadAir-74x55@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A20A2261E33D00FA8AAF /* icon-messages-app-iPadAir-74x55@2x.png */; };
+		EAB2A2912261E33D00FA8AAF /* icon-messages-app-iPhone-60x45@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A20B2261E33D00FA8AAF /* icon-messages-app-iPhone-60x45@3x.png */; };
+		EAB2A2922261E33D00FA8AAF /* icon-messages-app-iPhone-60x45@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A20C2261E33D00FA8AAF /* icon-messages-app-iPhone-60x45@2x.png */; };
+		EAB2A2932261E33D00FA8AAF /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A20F2261E33D00FA8AAF /* Icon-40@2x.png */; };
+		EAB2A2942261E33D00FA8AAF /* Icon-29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A2102261E33D00FA8AAF /* Icon-29@2x.png */; };
+		EAB2A2952261E33D00FA8AAF /* Icon-44@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A2112261E33D00FA8AAF /* Icon-44@2x.png */; };
+		EAB2A2962261E33D00FA8AAF /* Icon-29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A2122261E33D00FA8AAF /* Icon-29@3x.png */; };
+		EAB2A2972261E33D00FA8AAF /* Icon-27.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A2132261E33D00FA8AAF /* Icon-27.5@2x.png */; };
+		EAB2A2982261E33D00FA8AAF /* Icon-86@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A2142261E33D00FA8AAF /* Icon-86@2x.png */; };
+		EAB2A2992261E33D00FA8AAF /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A2152261E33D00FA8AAF /* Contents.json */; };
+		EAB2A29A2261E33D00FA8AAF /* Icon-98@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A2162261E33D00FA8AAF /* Icon-98@2x.png */; };
+		EAB2A29B2261E33D00FA8AAF /* Icon-24@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A2172261E33D00FA8AAF /* Icon-24@2x.png */; };
+		EAB2A29C2261E33D00FA8AAF /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2A2192261E33D00FA8AAF /* Environment.swift */; };
+		EAB2A29D2261E33D00FA8AAF /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2A21A2261E33D00FA8AAF /* ErrorHandler.swift */; };
+		EAB2A29E2261E33D00FA8AAF /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2A21B2261E33D00FA8AAF /* Request.swift */; };
+		EAB2A29F2261E33D00FA8AAF /* NetworkDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2A21C2261E33D00FA8AAF /* NetworkDispatcher.swift */; };
+		EAB2A2A02261E33D00FA8AAF /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2A21F2261E33D00FA8AAF /* Repository.swift */; };
+		EAB2A2A12261E33D00FA8AAF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2A2212261E33D00FA8AAF /* User.swift */; };
+		EAB2A2A22261E33D00FA8AAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2A2232261E33D00FA8AAF /* AppDelegate.swift */; };
+		EAB2A2A32261E33D00FA8AAF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EAB2A2242261E33D00FA8AAF /* Info.plist */; };
+		EAB2A2A82261E33D00FA8AAF /* RepositoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2A22C2261E33D00FA8AAF /* RepositoriesViewModel.swift */; };
+		EAB2A2AA2261E33D00FA8AAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2A22E2261E33D00FA8AAF /* ViewController.swift */; };
+		EAB2A2AB2261E33D00FA8AAF /* RepositoryCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2A2312261E33D00FA8AAF /* RepositoryCellViewModel.swift */; };
+		EAB2A2AC2261E33D00FA8AAF /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2A2322261E33D00FA8AAF /* RepositoryTableViewCell.swift */; };
+		EAB2A2AD2261E33D00FA8AAF /* ReduxVCPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2A2342261E33D00FA8AAF /* ReduxVCPresenter.swift */; };
+		EAB2A2AE2261E33D00FA8AAF /* ReduxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2A2352261E33D00FA8AAF /* ReduxViewController.swift */; };
+		EAB2A2AF2261E33D00FA8AAF /* ItemViperAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2A2392261E33D00FA8AAF /* ItemViperAssembly.swift */; };
+		EAB2A2B02261E33D00FA8AAF /* ItemViperPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2A23B2261E33D00FA8AAF /* ItemViperPresenter.swift */; };
+		EAB2A2B12261E33D00FA8AAF /* ItemViperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2A23D2261E33D00FA8AAF /* ItemViperViewController.swift */; };
+		EAB2A2B22261E33D00FA8AAF /* ItemViperInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2A23F2261E33D00FA8AAF /* ItemViperInteractor.swift */; };
+		EAB2A2B32261E33D00FA8AAF /* ItemViperRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2A2412261E33D00FA8AAF /* ItemViperRouter.swift */; };
+		EAB2A2B42261E33D00FA8AAF /* SearchViperAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2A2442261E33D00FA8AAF /* SearchViperAssembly.swift */; };
+		EAB2A2B52261E33D00FA8AAF /* SearchViperPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2A2462261E33D00FA8AAF /* SearchViperPresenter.swift */; };
+		EAB2A2B62261E33D00FA8AAF /* SearchViperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2A2482261E33D00FA8AAF /* SearchViperViewController.swift */; };
+		EAB2A2B72261E33D00FA8AAF /* SearchViperInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2A24A2261E33D00FA8AAF /* SearchViperInteractor.swift */; };
+		EAB2A2B82261E33D00FA8AAF /* SearchViperRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2A24C2261E33D00FA8AAF /* SearchViperRouter.swift */; };
+		EAB2A2B92261E33D00FA8AAF /* StateRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2A24F2261E33D00FA8AAF /* StateRepository.swift */; };
+		EAB2A2BA2261E33D00FA8AAF /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2A2502261E33D00FA8AAF /* State.swift */; };
+		EAB2A2BB2261E33D00FA8AAF /* StateLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2A2512261E33D00FA8AAF /* StateLoading.swift */; };
+		EAB2A2BC2261E33D00FA8AAF /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2A2522261E33D00FA8AAF /* Command.swift */; };
+		EAB2A2BD2261E33D00FA8AAF /* RepositoriesFailLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2A2552261E33D00FA8AAF /* RepositoriesFailLoading.swift */; };
+		EAB2A2BE2261E33D00FA8AAF /* RepositoriesDidLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2A2562261E33D00FA8AAF /* RepositoriesDidLoad.swift */; };
+		EAB2A2BF2261E33D00FA8AAF /* RepositoriesStartLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2A2572261E33D00FA8AAF /* RepositoriesStartLoading.swift */; };
+		EAB2A2C02261E33D00FA8AAF /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2A2582261E33D00FA8AAF /* Action.swift */; };
+		EAB2A2C12261E33D00FA8AAF /* RepositoriesLoadingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2A25A2261E33D00FA8AAF /* RepositoriesLoadingController.swift */; };
+		EAB2A2C22261E33D00FA8AAF /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2A25C2261E33D00FA8AAF /* Store.swift */; };
+		EAB2A2C32261E33D00FA8AAF /* SearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2A2612261E33D00FA8AAF /* SearchRequest.swift */; };
+		EAB2A2C42261E33D00FA8AAF /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2A2622261E33D00FA8AAF /* SearchService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA2B0EDE2233C52F0087295A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA3C21EF21470F31006519DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA3C21F621470F31006519DE;
+			remoteInfo = IvanKramCodeIT;
+		};
+		EA794C1F2261ED77002E58B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA3C21EF21470F31006519DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA3C21F621470F31006519DE;
+			remoteInfo = PeerlabPDObjC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		31CFE6AC3ED8C29548A6EEC7 /* Pods-PeerlabPDObjC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeerlabPDObjC.release.xcconfig"; path = "Pods/Target Support Files/Pods-PeerlabPDObjC/Pods-PeerlabPDObjC.release.xcconfig"; sourceTree = "<group>"; };
+		4F73335405928821581B981B /* Pods-PeerlabPDObjC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeerlabPDObjC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PeerlabPDObjC/Pods-PeerlabPDObjC.debug.xcconfig"; sourceTree = "<group>"; };
+		73FF310B0C63560804FF2F98 /* Pods_PeerlabPDObjC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PeerlabPDObjC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA2B0ED92233C52F0087295A /* PeerlabPDObjCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeerlabPDObjCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA2B0EDB2233C52F0087295A /* PeerlabDPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeerlabDPTests.swift; sourceTree = "<group>"; };
+		EA2B0EDD2233C52F0087295A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA2B0EE32233C5640087295A /* RepositoriesLoadingTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesLoadingTestCase.swift; sourceTree = "<group>"; };
+		EA3C21F721470F31006519DE /* PeerlabPDObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeerlabPDObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA794C1A2261ED76002E58B3 /* PeerlabPDObjCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeerlabPDObjCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA794C1C2261ED77002E58B3 /* PeerlabPDObjCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeerlabPDObjCUITests.swift; sourceTree = "<group>"; };
+		EA794C1E2261ED77002E58B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA794C342261EDE3002E58B3 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
+		EAB2A1D32261E33D00FA8AAF /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		EAB2A1D52261E33D00FA8AAF /* UIAlerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlerController.swift; sourceTree = "<group>"; };
+		EAB2A1D72261E33D00FA8AAF /* RouterAsembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterAsembly.swift; sourceTree = "<group>"; };
+		EAB2A1D92261E33D00FA8AAF /* BaseRequestOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRequestOperation.swift; sourceTree = "<group>"; };
+		EAB2A1DB2261E33D00FA8AAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EAB2A1DD2261E33D00FA8AAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EAB2A1DF2261E33D00FA8AAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EAB2A1E22261E33D00FA8AAF /* iTunesArtwork@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@1x.png"; sourceTree = "<group>"; };
+		EAB2A1E32261E33D00FA8AAF /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
+		EAB2A1E52261E33D00FA8AAF /* Icon-App-76x76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-76x76@2x.png"; sourceTree = "<group>"; };
+		EAB2A1E62261E33D00FA8AAF /* Icon-App-29x29@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-29x29@1x.png"; sourceTree = "<group>"; };
+		EAB2A1E72261E33D00FA8AAF /* Icon-App-60x60@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-60x60@1x.png"; sourceTree = "<group>"; };
+		EAB2A1E82261E33D00FA8AAF /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		EAB2A1E92261E33D00FA8AAF /* Icon-App-40x40@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@1x.png"; sourceTree = "<group>"; };
+		EAB2A1EA2261E33D00FA8AAF /* Icon-App-76x76@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-76x76@3x.png"; sourceTree = "<group>"; };
+		EAB2A1EB2261E33D00FA8AAF /* Icon-App-20x20@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-20x20@1x.png"; sourceTree = "<group>"; };
+		EAB2A1EC2261E33D00FA8AAF /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60.png"; sourceTree = "<group>"; };
+		EAB2A1ED2261E33D00FA8AAF /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		EAB2A1EE2261E33D00FA8AAF /* Icon-App-83.5x83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-83.5x83.5@2x.png"; sourceTree = "<group>"; };
+		EAB2A1EF2261E33D00FA8AAF /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		EAB2A1F02261E33D00FA8AAF /* Icon-App-20x20@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-20x20@3x.png"; sourceTree = "<group>"; };
+		EAB2A1F12261E33D00FA8AAF /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		EAB2A1F22261E33D00FA8AAF /* ItunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ItunesArtwork@2x.png"; sourceTree = "<group>"; };
+		EAB2A1F32261E33D00FA8AAF /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		EAB2A1F42261E33D00FA8AAF /* Icon-App-20x20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-20x20@2x.png"; sourceTree = "<group>"; };
+		EAB2A1F52261E33D00FA8AAF /* Icon-App-29x29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-29x29@3x.png"; sourceTree = "<group>"; };
+		EAB2A1F62261E33D00FA8AAF /* Icon-App-40x40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@2x.png"; sourceTree = "<group>"; };
+		EAB2A1F72261E33D00FA8AAF /* Icon-App-60x60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-60x60@3x.png"; sourceTree = "<group>"; };
+		EAB2A1F82261E33D00FA8AAF /* Icon-App-60x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-60x60@2x.png"; sourceTree = "<group>"; };
+		EAB2A1F92261E33D00FA8AAF /* Icon-App-76x76@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-76x76@1x.png"; sourceTree = "<group>"; };
+		EAB2A1FA2261E33D00FA8AAF /* Icon-App-40x40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@3x.png"; sourceTree = "<group>"; };
+		EAB2A1FB2261E33D00FA8AAF /* Icon-App-29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-29x29@2x.png"; sourceTree = "<group>"; };
+		EAB2A1FC2261E33D00FA8AAF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		EAB2A1FD2261E33D00FA8AAF /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		EAB2A1FE2261E33D00FA8AAF /* iTunesArtwork@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@3x.png"; sourceTree = "<group>"; };
+		EAB2A1FF2261E33D00FA8AAF /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		EAB2A2012261E33D00FA8AAF /* icon-messages-app-iPhone-60x45@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-messages-app-iPhone-60x45@1x.png"; sourceTree = "<group>"; };
+		EAB2A2022261E33D00FA8AAF /* icon-messages-app-iPadAir-67x50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-messages-app-iPadAir-67x50@2x.png"; sourceTree = "<group>"; };
+		EAB2A2032261E33D00FA8AAF /* icon-messages-app-store-1024x768.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-messages-app-store-1024x768.png"; sourceTree = "<group>"; };
+		EAB2A2042261E33D00FA8AAF /* icon-messages-transcript-32x24@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-messages-transcript-32x24@3x.png"; sourceTree = "<group>"; };
+		EAB2A2052261E33D00FA8AAF /* icon-messages-app-27x20@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-messages-app-27x20@1x.png"; sourceTree = "<group>"; };
+		EAB2A2062261E33D00FA8AAF /* icon-messages-transcript-32x24@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-messages-transcript-32x24@2x.png"; sourceTree = "<group>"; };
+		EAB2A2072261E33D00FA8AAF /* icon-messages-app-27x20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-messages-app-27x20@2x.png"; sourceTree = "<group>"; };
+		EAB2A2082261E33D00FA8AAF /* icon-messages-transcript-32x24@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-messages-transcript-32x24@1x.png"; sourceTree = "<group>"; };
+		EAB2A2092261E33D00FA8AAF /* icon-messages-app-27x20@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-messages-app-27x20@3x.png"; sourceTree = "<group>"; };
+		EAB2A20A2261E33D00FA8AAF /* icon-messages-app-iPadAir-74x55@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-messages-app-iPadAir-74x55@2x.png"; sourceTree = "<group>"; };
+		EAB2A20B2261E33D00FA8AAF /* icon-messages-app-iPhone-60x45@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-messages-app-iPhone-60x45@3x.png"; sourceTree = "<group>"; };
+		EAB2A20C2261E33D00FA8AAF /* icon-messages-app-iPhone-60x45@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-messages-app-iPhone-60x45@2x.png"; sourceTree = "<group>"; };
+		EAB2A20F2261E33D00FA8AAF /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@2x.png"; sourceTree = "<group>"; };
+		EAB2A2102261E33D00FA8AAF /* Icon-29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-29@2x.png"; sourceTree = "<group>"; };
+		EAB2A2112261E33D00FA8AAF /* Icon-44@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-44@2x.png"; sourceTree = "<group>"; };
+		EAB2A2122261E33D00FA8AAF /* Icon-29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-29@3x.png"; sourceTree = "<group>"; };
+		EAB2A2132261E33D00FA8AAF /* Icon-27.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-27.5@2x.png"; sourceTree = "<group>"; };
+		EAB2A2142261E33D00FA8AAF /* Icon-86@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-86@2x.png"; sourceTree = "<group>"; };
+		EAB2A2152261E33D00FA8AAF /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		EAB2A2162261E33D00FA8AAF /* Icon-98@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-98@2x.png"; sourceTree = "<group>"; };
+		EAB2A2172261E33D00FA8AAF /* Icon-24@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-24@2x.png"; sourceTree = "<group>"; };
+		EAB2A2192261E33D00FA8AAF /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		EAB2A21A2261E33D00FA8AAF /* ErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
+		EAB2A21B2261E33D00FA8AAF /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		EAB2A21C2261E33D00FA8AAF /* NetworkDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDispatcher.swift; sourceTree = "<group>"; };
+		EAB2A21F2261E33D00FA8AAF /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		EAB2A2212261E33D00FA8AAF /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EAB2A2232261E33D00FA8AAF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EAB2A2242261E33D00FA8AAF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAB2A22C2261E33D00FA8AAF /* RepositoriesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoriesViewModel.swift; sourceTree = "<group>"; };
+		EAB2A22E2261E33D00FA8AAF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EAB2A2312261E33D00FA8AAF /* RepositoryCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryCellViewModel.swift; sourceTree = "<group>"; };
+		EAB2A2322261E33D00FA8AAF /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryTableViewCell.swift; sourceTree = "<group>"; };
+		EAB2A2342261E33D00FA8AAF /* ReduxVCPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReduxVCPresenter.swift; sourceTree = "<group>"; };
+		EAB2A2352261E33D00FA8AAF /* ReduxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReduxViewController.swift; sourceTree = "<group>"; };
+		EAB2A2392261E33D00FA8AAF /* ItemViperAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViperAssembly.swift; sourceTree = "<group>"; };
+		EAB2A23B2261E33D00FA8AAF /* ItemViperPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViperPresenter.swift; sourceTree = "<group>"; };
+		EAB2A23D2261E33D00FA8AAF /* ItemViperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViperViewController.swift; sourceTree = "<group>"; };
+		EAB2A23F2261E33D00FA8AAF /* ItemViperInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViperInteractor.swift; sourceTree = "<group>"; };
+		EAB2A2412261E33D00FA8AAF /* ItemViperRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViperRouter.swift; sourceTree = "<group>"; };
+		EAB2A2442261E33D00FA8AAF /* SearchViperAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViperAssembly.swift; sourceTree = "<group>"; };
+		EAB2A2462261E33D00FA8AAF /* SearchViperPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViperPresenter.swift; sourceTree = "<group>"; };
+		EAB2A2482261E33D00FA8AAF /* SearchViperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViperViewController.swift; sourceTree = "<group>"; };
+		EAB2A24A2261E33D00FA8AAF /* SearchViperInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViperInteractor.swift; sourceTree = "<group>"; };
+		EAB2A24C2261E33D00FA8AAF /* SearchViperRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViperRouter.swift; sourceTree = "<group>"; };
+		EAB2A24F2261E33D00FA8AAF /* StateRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateRepository.swift; sourceTree = "<group>"; };
+		EAB2A2502261E33D00FA8AAF /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		EAB2A2512261E33D00FA8AAF /* StateLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateLoading.swift; sourceTree = "<group>"; };
+		EAB2A2522261E33D00FA8AAF /* Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		EAB2A2552261E33D00FA8AAF /* RepositoriesFailLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoriesFailLoading.swift; sourceTree = "<group>"; };
+		EAB2A2562261E33D00FA8AAF /* RepositoriesDidLoad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoriesDidLoad.swift; sourceTree = "<group>"; };
+		EAB2A2572261E33D00FA8AAF /* RepositoriesStartLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoriesStartLoading.swift; sourceTree = "<group>"; };
+		EAB2A2582261E33D00FA8AAF /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		EAB2A25A2261E33D00FA8AAF /* RepositoriesLoadingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoriesLoadingController.swift; sourceTree = "<group>"; };
+		EAB2A25C2261E33D00FA8AAF /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		EAB2A2612261E33D00FA8AAF /* SearchRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchRequest.swift; sourceTree = "<group>"; };
+		EAB2A2622261E33D00FA8AAF /* SearchService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA2B0ED62233C52F0087295A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA3C21F421470F31006519DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46F89BF45D22306439C0607F /* Pods_PeerlabPDObjC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA794C172261ED76002E58B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA2B0EDA2233C52F0087295A /* PeerlabPDTests */ = {
+			isa = PBXGroup;
+			children = (
+				EA2B0EDB2233C52F0087295A /* PeerlabDPTests.swift */,
+				EA2B0EDD2233C52F0087295A /* Info.plist */,
+				EA2B0EE32233C5640087295A /* RepositoriesLoadingTestCase.swift */,
+			);
+			path = PeerlabPDTests;
+			sourceTree = "<group>";
+		};
+		EA3C21EE21470F31006519DE = {
+			isa = PBXGroup;
+			children = (
+				EAB2A1D02261E33D00FA8AAF /* PeerlabPDObjC */,
+				EA2B0EDA2233C52F0087295A /* PeerlabPDTests */,
+				EA794C1B2261ED77002E58B3 /* PeerlabPDObjCUITests */,
+				EA3C21F821470F31006519DE /* Products */,
+				F5E3D4849E6D14EB6378A737 /* Pods */,
+				F284A168E4E08ECC3A5E53C6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EA3C21F821470F31006519DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA3C21F721470F31006519DE /* PeerlabPDObjC.app */,
+				EA2B0ED92233C52F0087295A /* PeerlabPDObjCTests.xctest */,
+				EA794C1A2261ED76002E58B3 /* PeerlabPDObjCUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA794C1B2261ED77002E58B3 /* PeerlabPDObjCUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EA794C342261EDE3002E58B3 /* SnapshotHelper.swift */,
+				EA794C1C2261ED77002E58B3 /* PeerlabPDObjCUITests.swift */,
+				EA794C1E2261ED77002E58B3 /* Info.plist */,
+			);
+			path = PeerlabPDObjCUITests;
+			sourceTree = "<group>";
+		};
+		EAB2A1D02261E33D00FA8AAF /* PeerlabPDObjC */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A1D12261E33D00FA8AAF /* BaseClasses */,
+				EAB2A1DA2261E33D00FA8AAF /* Resources */,
+				EAB2A2182261E33D00FA8AAF /* Network */,
+				EAB2A21D2261E33D00FA8AAF /* Models */,
+				EAB2A2222261E33D00FA8AAF /* AppFiles */,
+				EAB2A2252261E33D00FA8AAF /* Screens */,
+				EAB2A24D2261E33D00FA8AAF /* Redux */,
+				EAB2A25D2261E33D00FA8AAF /* Services */,
+			);
+			path = PeerlabPDObjC;
+			sourceTree = "<group>";
+		};
+		EAB2A1D12261E33D00FA8AAF /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A1D22261E33D00FA8AAF /* BaseViewController */,
+				EAB2A1D42261E33D00FA8AAF /* Extensions */,
+				EAB2A1D62261E33D00FA8AAF /* BaseRouting */,
+				EAB2A1D82261E33D00FA8AAF /* BaseNetworkRequest */,
+			);
+			path = BaseClasses;
+			sourceTree = "<group>";
+		};
+		EAB2A1D22261E33D00FA8AAF /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A1D32261E33D00FA8AAF /* BaseViewController.swift */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		EAB2A1D42261E33D00FA8AAF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A1D52261E33D00FA8AAF /* UIAlerController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EAB2A1D62261E33D00FA8AAF /* BaseRouting */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A1D72261E33D00FA8AAF /* RouterAsembly.swift */,
+			);
+			path = BaseRouting;
+			sourceTree = "<group>";
+		};
+		EAB2A1D82261E33D00FA8AAF /* BaseNetworkRequest */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A1D92261E33D00FA8AAF /* BaseRequestOperation.swift */,
+			);
+			path = BaseNetworkRequest;
+			sourceTree = "<group>";
+		};
+		EAB2A1DA2261E33D00FA8AAF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A1DB2261E33D00FA8AAF /* Assets.xcassets */,
+				EAB2A1DC2261E33D00FA8AAF /* LaunchScreen.storyboard */,
+				EAB2A1DE2261E33D00FA8AAF /* Main.storyboard */,
+				EAB2A1E02261E33D00FA8AAF /* github */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EAB2A1E02261E33D00FA8AAF /* github */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A1E12261E33D00FA8AAF /* ios */,
+				EAB2A2002261E33D00FA8AAF /* imessenger */,
+				EAB2A20D2261E33D00FA8AAF /* watchkit */,
+			);
+			path = github;
+			sourceTree = "<group>";
+		};
+		EAB2A1E12261E33D00FA8AAF /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A1E22261E33D00FA8AAF /* iTunesArtwork@1x.png */,
+				EAB2A1E32261E33D00FA8AAF /* Icon-Small-50@2x.png */,
+				EAB2A1E42261E33D00FA8AAF /* AppIcon.appiconset */,
+				EAB2A1FC2261E33D00FA8AAF /* README.md */,
+				EAB2A1FD2261E33D00FA8AAF /* iTunesArtwork@2x.png */,
+				EAB2A1FE2261E33D00FA8AAF /* iTunesArtwork@3x.png */,
+				EAB2A1FF2261E33D00FA8AAF /* Icon-Small-50.png */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		EAB2A1E42261E33D00FA8AAF /* AppIcon.appiconset */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A1E52261E33D00FA8AAF /* Icon-App-76x76@2x.png */,
+				EAB2A1E62261E33D00FA8AAF /* Icon-App-29x29@1x.png */,
+				EAB2A1E72261E33D00FA8AAF /* Icon-App-60x60@1x.png */,
+				EAB2A1E82261E33D00FA8AAF /* Icon.png */,
+				EAB2A1E92261E33D00FA8AAF /* Icon-App-40x40@1x.png */,
+				EAB2A1EA2261E33D00FA8AAF /* Icon-App-76x76@3x.png */,
+				EAB2A1EB2261E33D00FA8AAF /* Icon-App-20x20@1x.png */,
+				EAB2A1EC2261E33D00FA8AAF /* Icon-60.png */,
+				EAB2A1ED2261E33D00FA8AAF /* Icon-72.png */,
+				EAB2A1EE2261E33D00FA8AAF /* Icon-App-83.5x83.5@2x.png */,
+				EAB2A1EF2261E33D00FA8AAF /* Icon-72@2x.png */,
+				EAB2A1F02261E33D00FA8AAF /* Icon-App-20x20@3x.png */,
+				EAB2A1F12261E33D00FA8AAF /* Icon@2x.png */,
+				EAB2A1F22261E33D00FA8AAF /* ItunesArtwork@2x.png */,
+				EAB2A1F32261E33D00FA8AAF /* Contents.json */,
+				EAB2A1F42261E33D00FA8AAF /* Icon-App-20x20@2x.png */,
+				EAB2A1F52261E33D00FA8AAF /* Icon-App-29x29@3x.png */,
+				EAB2A1F62261E33D00FA8AAF /* Icon-App-40x40@2x.png */,
+				EAB2A1F72261E33D00FA8AAF /* Icon-App-60x60@3x.png */,
+				EAB2A1F82261E33D00FA8AAF /* Icon-App-60x60@2x.png */,
+				EAB2A1F92261E33D00FA8AAF /* Icon-App-76x76@1x.png */,
+				EAB2A1FA2261E33D00FA8AAF /* Icon-App-40x40@3x.png */,
+				EAB2A1FB2261E33D00FA8AAF /* Icon-App-29x29@2x.png */,
+			);
+			path = AppIcon.appiconset;
+			sourceTree = "<group>";
+		};
+		EAB2A2002261E33D00FA8AAF /* imessenger */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A2012261E33D00FA8AAF /* icon-messages-app-iPhone-60x45@1x.png */,
+				EAB2A2022261E33D00FA8AAF /* icon-messages-app-iPadAir-67x50@2x.png */,
+				EAB2A2032261E33D00FA8AAF /* icon-messages-app-store-1024x768.png */,
+				EAB2A2042261E33D00FA8AAF /* icon-messages-transcript-32x24@3x.png */,
+				EAB2A2052261E33D00FA8AAF /* icon-messages-app-27x20@1x.png */,
+				EAB2A2062261E33D00FA8AAF /* icon-messages-transcript-32x24@2x.png */,
+				EAB2A2072261E33D00FA8AAF /* icon-messages-app-27x20@2x.png */,
+				EAB2A2082261E33D00FA8AAF /* icon-messages-transcript-32x24@1x.png */,
+				EAB2A2092261E33D00FA8AAF /* icon-messages-app-27x20@3x.png */,
+				EAB2A20A2261E33D00FA8AAF /* icon-messages-app-iPadAir-74x55@2x.png */,
+				EAB2A20B2261E33D00FA8AAF /* icon-messages-app-iPhone-60x45@3x.png */,
+				EAB2A20C2261E33D00FA8AAF /* icon-messages-app-iPhone-60x45@2x.png */,
+			);
+			path = imessenger;
+			sourceTree = "<group>";
+		};
+		EAB2A20D2261E33D00FA8AAF /* watchkit */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A20E2261E33D00FA8AAF /* AppIcon.appiconset */,
+			);
+			path = watchkit;
+			sourceTree = "<group>";
+		};
+		EAB2A20E2261E33D00FA8AAF /* AppIcon.appiconset */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A20F2261E33D00FA8AAF /* Icon-40@2x.png */,
+				EAB2A2102261E33D00FA8AAF /* Icon-29@2x.png */,
+				EAB2A2112261E33D00FA8AAF /* Icon-44@2x.png */,
+				EAB2A2122261E33D00FA8AAF /* Icon-29@3x.png */,
+				EAB2A2132261E33D00FA8AAF /* Icon-27.5@2x.png */,
+				EAB2A2142261E33D00FA8AAF /* Icon-86@2x.png */,
+				EAB2A2152261E33D00FA8AAF /* Contents.json */,
+				EAB2A2162261E33D00FA8AAF /* Icon-98@2x.png */,
+				EAB2A2172261E33D00FA8AAF /* Icon-24@2x.png */,
+			);
+			path = AppIcon.appiconset;
+			sourceTree = "<group>";
+		};
+		EAB2A2182261E33D00FA8AAF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A2192261E33D00FA8AAF /* Environment.swift */,
+				EAB2A21A2261E33D00FA8AAF /* ErrorHandler.swift */,
+				EAB2A21B2261E33D00FA8AAF /* Request.swift */,
+				EAB2A21C2261E33D00FA8AAF /* NetworkDispatcher.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EAB2A21D2261E33D00FA8AAF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A21E2261E33D00FA8AAF /* Repository */,
+				EAB2A2202261E33D00FA8AAF /* User */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EAB2A21E2261E33D00FA8AAF /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A21F2261E33D00FA8AAF /* Repository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		EAB2A2202261E33D00FA8AAF /* User */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A2212261E33D00FA8AAF /* User.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		EAB2A2222261E33D00FA8AAF /* AppFiles */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A2232261E33D00FA8AAF /* AppDelegate.swift */,
+				EAB2A2242261E33D00FA8AAF /* Info.plist */,
+			);
+			path = AppFiles;
+			sourceTree = "<group>";
+		};
+		EAB2A2252261E33D00FA8AAF /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A2262261E33D00FA8AAF /* Search */,
+				EAB2A2332261E33D00FA8AAF /* ReduxModule */,
+				EAB2A2362261E33D00FA8AAF /* Viper */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		EAB2A2262261E33D00FA8AAF /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A2272261E33D00FA8AAF /* ViewModel */,
+				EAB2A22E2261E33D00FA8AAF /* ViewController.swift */,
+				EAB2A22F2261E33D00FA8AAF /* Cells */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		EAB2A2272261E33D00FA8AAF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A22C2261E33D00FA8AAF /* RepositoriesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EAB2A22F2261E33D00FA8AAF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A2302261E33D00FA8AAF /* Repository */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		EAB2A2302261E33D00FA8AAF /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A2312261E33D00FA8AAF /* RepositoryCellViewModel.swift */,
+				EAB2A2322261E33D00FA8AAF /* RepositoryTableViewCell.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		EAB2A2332261E33D00FA8AAF /* ReduxModule */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A2342261E33D00FA8AAF /* ReduxVCPresenter.swift */,
+				EAB2A2352261E33D00FA8AAF /* ReduxViewController.swift */,
+			);
+			path = ReduxModule;
+			sourceTree = "<group>";
+		};
+		EAB2A2362261E33D00FA8AAF /* Viper */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A2372261E33D00FA8AAF /* ItemViper */,
+				EAB2A2422261E33D00FA8AAF /* SearchViper */,
+			);
+			path = Viper;
+			sourceTree = "<group>";
+		};
+		EAB2A2372261E33D00FA8AAF /* ItemViper */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A2382261E33D00FA8AAF /* Assembly */,
+				EAB2A23A2261E33D00FA8AAF /* Presenter */,
+				EAB2A23C2261E33D00FA8AAF /* View */,
+				EAB2A23E2261E33D00FA8AAF /* Interactor */,
+				EAB2A2402261E33D00FA8AAF /* Router */,
+			);
+			path = ItemViper;
+			sourceTree = "<group>";
+		};
+		EAB2A2382261E33D00FA8AAF /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A2392261E33D00FA8AAF /* ItemViperAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		EAB2A23A2261E33D00FA8AAF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A23B2261E33D00FA8AAF /* ItemViperPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		EAB2A23C2261E33D00FA8AAF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A23D2261E33D00FA8AAF /* ItemViperViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EAB2A23E2261E33D00FA8AAF /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A23F2261E33D00FA8AAF /* ItemViperInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		EAB2A2402261E33D00FA8AAF /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A2412261E33D00FA8AAF /* ItemViperRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		EAB2A2422261E33D00FA8AAF /* SearchViper */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A2432261E33D00FA8AAF /* Assembly */,
+				EAB2A2452261E33D00FA8AAF /* Presenter */,
+				EAB2A2472261E33D00FA8AAF /* View */,
+				EAB2A2492261E33D00FA8AAF /* Interactor */,
+				EAB2A24B2261E33D00FA8AAF /* Router */,
+			);
+			path = SearchViper;
+			sourceTree = "<group>";
+		};
+		EAB2A2432261E33D00FA8AAF /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A2442261E33D00FA8AAF /* SearchViperAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		EAB2A2452261E33D00FA8AAF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A2462261E33D00FA8AAF /* SearchViperPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		EAB2A2472261E33D00FA8AAF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A2482261E33D00FA8AAF /* SearchViperViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EAB2A2492261E33D00FA8AAF /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A24A2261E33D00FA8AAF /* SearchViperInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		EAB2A24B2261E33D00FA8AAF /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A24C2261E33D00FA8AAF /* SearchViperRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		EAB2A24D2261E33D00FA8AAF /* Redux */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A24E2261E33D00FA8AAF /* State */,
+				EAB2A2522261E33D00FA8AAF /* Command.swift */,
+				EAB2A2532261E33D00FA8AAF /* Actions */,
+				EAB2A2592261E33D00FA8AAF /* Controllers */,
+				EAB2A25B2261E33D00FA8AAF /* Store */,
+			);
+			path = Redux;
+			sourceTree = "<group>";
+		};
+		EAB2A24E2261E33D00FA8AAF /* State */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A24F2261E33D00FA8AAF /* StateRepository.swift */,
+				EAB2A2502261E33D00FA8AAF /* State.swift */,
+				EAB2A2512261E33D00FA8AAF /* StateLoading.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		EAB2A2532261E33D00FA8AAF /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A2542261E33D00FA8AAF /* Repositories */,
+				EAB2A2582261E33D00FA8AAF /* Action.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		EAB2A2542261E33D00FA8AAF /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A2552261E33D00FA8AAF /* RepositoriesFailLoading.swift */,
+				EAB2A2562261E33D00FA8AAF /* RepositoriesDidLoad.swift */,
+				EAB2A2572261E33D00FA8AAF /* RepositoriesStartLoading.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		EAB2A2592261E33D00FA8AAF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A25A2261E33D00FA8AAF /* RepositoriesLoadingController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EAB2A25B2261E33D00FA8AAF /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A25C2261E33D00FA8AAF /* Store.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		EAB2A25D2261E33D00FA8AAF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A25E2261E33D00FA8AAF /* Search */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EAB2A25E2261E33D00FA8AAF /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A25F2261E33D00FA8AAF /* Requests */,
+				EAB2A2622261E33D00FA8AAF /* SearchService.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		EAB2A25F2261E33D00FA8AAF /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A2602261E33D00FA8AAF /* Swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		EAB2A2602261E33D00FA8AAF /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2A2612261E33D00FA8AAF /* SearchRequest.swift */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		F284A168E4E08ECC3A5E53C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73FF310B0C63560804FF2F98 /* Pods_PeerlabPDObjC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5E3D4849E6D14EB6378A737 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F73335405928821581B981B /* Pods-PeerlabPDObjC.debug.xcconfig */,
+				31CFE6AC3ED8C29548A6EEC7 /* Pods-PeerlabPDObjC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA2B0ED82233C52F0087295A /* PeerlabPDObjCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA2B0EE02233C52F0087295A /* Build configuration list for PBXNativeTarget "PeerlabPDObjCTests" */;
+			buildPhases = (
+				EA2B0ED52233C52F0087295A /* Sources */,
+				EA2B0ED62233C52F0087295A /* Frameworks */,
+				EA2B0ED72233C52F0087295A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA2B0EDF2233C52F0087295A /* PBXTargetDependency */,
+			);
+			name = PeerlabPDObjCTests;
+			productName = IvanKramCodeITTests;
+			productReference = EA2B0ED92233C52F0087295A /* PeerlabPDObjCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EA3C21F621470F31006519DE /* PeerlabPDObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA3C221421470F33006519DE /* Build configuration list for PBXNativeTarget "PeerlabPDObjC" */;
+			buildPhases = (
+				546E3BC94BCCAFE9C4E5849D /* [CP] Check Pods Manifest.lock */,
+				EA3C21F321470F31006519DE /* Sources */,
+				EA3C21F421470F31006519DE /* Frameworks */,
+				EA3C21F521470F31006519DE /* Resources */,
+				8B82458FDACBC98333FA1D43 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PeerlabPDObjC;
+			productName = IvanKramCodeIT;
+			productReference = EA3C21F721470F31006519DE /* PeerlabPDObjC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA794C192261ED76002E58B3 /* PeerlabPDObjCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA794C212261ED77002E58B3 /* Build configuration list for PBXNativeTarget "PeerlabPDObjCUITests" */;
+			buildPhases = (
+				EA794C162261ED76002E58B3 /* Sources */,
+				EA794C172261ED76002E58B3 /* Frameworks */,
+				EA794C182261ED76002E58B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA794C202261ED77002E58B3 /* PBXTargetDependency */,
+			);
+			name = PeerlabPDObjCUITests;
+			productName = PeerlabPDObjCUITests;
+			productReference = EA794C1A2261ED76002E58B3 /* PeerlabPDObjCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA3C21EF21470F31006519DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				DefaultBuildSystemTypeForWorkspace = Original;
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = IvanKram;
+				TargetAttributes = {
+					EA2B0ED82233C52F0087295A = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = EA3C21F621470F31006519DE;
+					};
+					EA3C21F621470F31006519DE = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					EA794C192261ED76002E58B3 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = EA3C21F621470F31006519DE;
+					};
+				};
+			};
+			buildConfigurationList = EA3C21F221470F31006519DE /* Build configuration list for PBXProject "PeerlabPDObjC" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA3C21EE21470F31006519DE;
+			productRefGroup = EA3C21F821470F31006519DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA3C21F621470F31006519DE /* PeerlabPDObjC */,
+				EA2B0ED82233C52F0087295A /* PeerlabPDObjCTests */,
+				EA794C192261ED76002E58B3 /* PeerlabPDObjCUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA2B0ED72233C52F0087295A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA3C21F521470F31006519DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAB2A26F2261E33D00FA8AAF /* Icon.png in Resources */,
+				EAB2A2982261E33D00FA8AAF /* Icon-86@2x.png in Resources */,
+				EAB2A2992261E33D00FA8AAF /* Contents.json in Resources */,
+				EAB2A2842261E33D00FA8AAF /* iTunesArtwork@2x.png in Resources */,
+				EAB2A2782261E33D00FA8AAF /* Icon@2x.png in Resources */,
+				EAB2A26D2261E33D00FA8AAF /* Icon-App-29x29@1x.png in Resources */,
+				EAB2A28F2261E33D00FA8AAF /* icon-messages-app-27x20@3x.png in Resources */,
+				EAB2A27E2261E33D00FA8AAF /* Icon-App-60x60@3x.png in Resources */,
+				EAB2A2872261E33D00FA8AAF /* icon-messages-app-iPhone-60x45@1x.png in Resources */,
+				EAB2A2862261E33D00FA8AAF /* Icon-Small-50.png in Resources */,
+				EAB2A27D2261E33D00FA8AAF /* Icon-App-40x40@2x.png in Resources */,
+				EAB2A26E2261E33D00FA8AAF /* Icon-App-60x60@1x.png in Resources */,
+				EAB2A2812261E33D00FA8AAF /* Icon-App-40x40@3x.png in Resources */,
+				EAB2A27F2261E33D00FA8AAF /* Icon-App-60x60@2x.png in Resources */,
+				EAB2A2822261E33D00FA8AAF /* Icon-App-29x29@2x.png in Resources */,
+				EAB2A28D2261E33D00FA8AAF /* icon-messages-app-27x20@2x.png in Resources */,
+				EAB2A28A2261E33D00FA8AAF /* icon-messages-transcript-32x24@3x.png in Resources */,
+				EAB2A2802261E33D00FA8AAF /* Icon-App-76x76@1x.png in Resources */,
+				EAB2A2692261E33D00FA8AAF /* Main.storyboard in Resources */,
+				EAB2A28C2261E33D00FA8AAF /* icon-messages-transcript-32x24@2x.png in Resources */,
+				EAB2A2A32261E33D00FA8AAF /* Info.plist in Resources */,
+				EAB2A2792261E33D00FA8AAF /* ItunesArtwork@2x.png in Resources */,
+				EAB2A2752261E33D00FA8AAF /* Icon-App-83.5x83.5@2x.png in Resources */,
+				EAB2A2832261E33D00FA8AAF /* README.md in Resources */,
+				EAB2A2882261E33D00FA8AAF /* icon-messages-app-iPadAir-67x50@2x.png in Resources */,
+				EAB2A2712261E33D00FA8AAF /* Icon-App-76x76@3x.png in Resources */,
+				EAB2A29B2261E33D00FA8AAF /* Icon-24@2x.png in Resources */,
+				EAB2A27B2261E33D00FA8AAF /* Icon-App-20x20@2x.png in Resources */,
+				EAB2A2742261E33D00FA8AAF /* Icon-72.png in Resources */,
+				EAB2A2892261E33D00FA8AAF /* icon-messages-app-store-1024x768.png in Resources */,
+				EAB2A2912261E33D00FA8AAF /* icon-messages-app-iPhone-60x45@3x.png in Resources */,
+				EAB2A2902261E33D00FA8AAF /* icon-messages-app-iPadAir-74x55@2x.png in Resources */,
+				EAB2A2722261E33D00FA8AAF /* Icon-App-20x20@1x.png in Resources */,
+				EAB2A2962261E33D00FA8AAF /* Icon-29@3x.png in Resources */,
+				EAB2A2672261E33D00FA8AAF /* Assets.xcassets in Resources */,
+				EAB2A2952261E33D00FA8AAF /* Icon-44@2x.png in Resources */,
+				EAB2A2732261E33D00FA8AAF /* Icon-60.png in Resources */,
+				EAB2A2972261E33D00FA8AAF /* Icon-27.5@2x.png in Resources */,
+				EAB2A2762261E33D00FA8AAF /* Icon-72@2x.png in Resources */,
+				EAB2A2702261E33D00FA8AAF /* Icon-App-40x40@1x.png in Resources */,
+				EAB2A28E2261E33D00FA8AAF /* icon-messages-transcript-32x24@1x.png in Resources */,
+				EAB2A28B2261E33D00FA8AAF /* icon-messages-app-27x20@1x.png in Resources */,
+				EAB2A27C2261E33D00FA8AAF /* Icon-App-29x29@3x.png in Resources */,
+				EAB2A2852261E33D00FA8AAF /* iTunesArtwork@3x.png in Resources */,
+				EAB2A26C2261E33D00FA8AAF /* Icon-App-76x76@2x.png in Resources */,
+				EAB2A2922261E33D00FA8AAF /* icon-messages-app-iPhone-60x45@2x.png in Resources */,
+				EAB2A2932261E33D00FA8AAF /* Icon-40@2x.png in Resources */,
+				EAB2A26B2261E33D00FA8AAF /* Icon-Small-50@2x.png in Resources */,
+				EAB2A2942261E33D00FA8AAF /* Icon-29@2x.png in Resources */,
+				EAB2A26A2261E33D00FA8AAF /* iTunesArtwork@1x.png in Resources */,
+				EAB2A2682261E33D00FA8AAF /* LaunchScreen.storyboard in Resources */,
+				EAB2A29A2261E33D00FA8AAF /* Icon-98@2x.png in Resources */,
+				EAB2A2772261E33D00FA8AAF /* Icon-App-20x20@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA794C182261ED76002E58B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		546E3BC94BCCAFE9C4E5849D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PeerlabPDObjC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B82458FDACBC98333FA1D43 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PeerlabPDObjC/Pods-PeerlabPDObjC-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PeerlabPDObjC/Pods-PeerlabPDObjC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA2B0ED52233C52F0087295A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA2B0EE42233C5640087295A /* RepositoriesLoadingTestCase.swift in Sources */,
+				EA2B0EDC2233C52F0087295A /* PeerlabDPTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA3C21F321470F31006519DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAB2A2B42261E33D00FA8AAF /* SearchViperAssembly.swift in Sources */,
+				EAB2A2AB2261E33D00FA8AAF /* RepositoryCellViewModel.swift in Sources */,
+				EAB2A2A22261E33D00FA8AAF /* AppDelegate.swift in Sources */,
+				EAB2A2AC2261E33D00FA8AAF /* RepositoryTableViewCell.swift in Sources */,
+				EAB2A2C32261E33D00FA8AAF /* SearchRequest.swift in Sources */,
+				EAB2A2BF2261E33D00FA8AAF /* RepositoriesStartLoading.swift in Sources */,
+				EAB2A2652261E33D00FA8AAF /* RouterAsembly.swift in Sources */,
+				EAB2A2B32261E33D00FA8AAF /* ItemViperRouter.swift in Sources */,
+				EAB2A2BD2261E33D00FA8AAF /* RepositoriesFailLoading.swift in Sources */,
+				EAB2A2BE2261E33D00FA8AAF /* RepositoriesDidLoad.swift in Sources */,
+				EAB2A2C02261E33D00FA8AAF /* Action.swift in Sources */,
+				EAB2A2632261E33D00FA8AAF /* BaseViewController.swift in Sources */,
+				EAB2A2B92261E33D00FA8AAF /* StateRepository.swift in Sources */,
+				EAB2A2662261E33D00FA8AAF /* BaseRequestOperation.swift in Sources */,
+				EAB2A2BA2261E33D00FA8AAF /* State.swift in Sources */,
+				EAB2A29F2261E33D00FA8AAF /* NetworkDispatcher.swift in Sources */,
+				EAB2A29D2261E33D00FA8AAF /* ErrorHandler.swift in Sources */,
+				EAB2A29E2261E33D00FA8AAF /* Request.swift in Sources */,
+				EAB2A2C22261E33D00FA8AAF /* Store.swift in Sources */,
+				EAB2A2B82261E33D00FA8AAF /* SearchViperRouter.swift in Sources */,
+				EAB2A2A82261E33D00FA8AAF /* RepositoriesViewModel.swift in Sources */,
+				EAB2A2C42261E33D00FA8AAF /* SearchService.swift in Sources */,
+				EAB2A2C12261E33D00FA8AAF /* RepositoriesLoadingController.swift in Sources */,
+				EAB2A2BB2261E33D00FA8AAF /* StateLoading.swift in Sources */,
+				EAB2A2B72261E33D00FA8AAF /* SearchViperInteractor.swift in Sources */,
+				EAB2A2B52261E33D00FA8AAF /* SearchViperPresenter.swift in Sources */,
+				EAB2A2AD2261E33D00FA8AAF /* ReduxVCPresenter.swift in Sources */,
+				EAB2A2BC2261E33D00FA8AAF /* Command.swift in Sources */,
+				EAB2A2AF2261E33D00FA8AAF /* ItemViperAssembly.swift in Sources */,
+				EAB2A2B62261E33D00FA8AAF /* SearchViperViewController.swift in Sources */,
+				EAB2A2B02261E33D00FA8AAF /* ItemViperPresenter.swift in Sources */,
+				EAB2A2AA2261E33D00FA8AAF /* ViewController.swift in Sources */,
+				EAB2A2642261E33D00FA8AAF /* UIAlerController.swift in Sources */,
+				EAB2A2AE2261E33D00FA8AAF /* ReduxViewController.swift in Sources */,
+				EAB2A2B12261E33D00FA8AAF /* ItemViperViewController.swift in Sources */,
+				EAB2A29C2261E33D00FA8AAF /* Environment.swift in Sources */,
+				EAB2A2A12261E33D00FA8AAF /* User.swift in Sources */,
+				EAB2A2A02261E33D00FA8AAF /* Repository.swift in Sources */,
+				EAB2A2B22261E33D00FA8AAF /* ItemViperInteractor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA794C162261ED76002E58B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA794C1D2261ED77002E58B3 /* PeerlabPDObjCUITests.swift in Sources */,
+				EA794C352261EDE3002E58B3 /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA2B0EDF2233C52F0087295A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA3C21F621470F31006519DE /* PeerlabPDObjC */;
+			targetProxy = EA2B0EDE2233C52F0087295A /* PBXContainerItemProxy */;
+		};
+		EA794C202261ED77002E58B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA3C21F621470F31006519DE /* PeerlabPDObjC */;
+			targetProxy = EA794C1F2261ED77002E58B3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EAB2A1DC2261E33D00FA8AAF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAB2A1DD2261E33D00FA8AAF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EAB2A1DE2261E33D00FA8AAF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAB2A1DF2261E33D00FA8AAF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA2B0EE12233C52F0087295A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 363TUX9KUK;
+				INFOPLIST_FILE = PeerlabPDTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.peerlabkh.placedarm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PeerlabPD.app/PeerlabPD";
+			};
+			name = Debug;
+		};
+		EA2B0EE22233C52F0087295A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 363TUX9KUK;
+				INFOPLIST_FILE = PeerlabPDTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.peerlabkh.placedarm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PeerlabPD.app/PeerlabPD";
+			};
+			name = Release;
+		};
+		EA3C221221470F33006519DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EA3C221321470F33006519DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA3C221521470F33006519DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F73335405928821581B981B /* Pods-PeerlabPDObjC.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 363TUX9KUK;
+				INFOPLIST_FILE = "$(SRCROOT)/PeerlabPD/AppFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.peerlabkh.placedarm.objc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA3C221621470F33006519DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31CFE6AC3ED8C29548A6EEC7 /* Pods-PeerlabPDObjC.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 363TUX9KUK;
+				INFOPLIST_FILE = "$(SRCROOT)/PeerlabPD/AppFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.peerlabkh.placedarm.objc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EA794C222261ED77002E58B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 363TUX9KUK;
+				INFOPLIST_FILE = PeerlabPDObjCUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.IvanKram.tets.PeerlabPDObjCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PeerlabPDObjC;
+			};
+			name = Debug;
+		};
+		EA794C232261ED77002E58B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 363TUX9KUK;
+				INFOPLIST_FILE = PeerlabPDObjCUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.IvanKram.tets.PeerlabPDObjCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PeerlabPDObjC;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA2B0EE02233C52F0087295A /* Build configuration list for PBXNativeTarget "PeerlabPDObjCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA2B0EE12233C52F0087295A /* Debug */,
+				EA2B0EE22233C52F0087295A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA3C21F221470F31006519DE /* Build configuration list for PBXProject "PeerlabPDObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA3C221221470F33006519DE /* Debug */,
+				EA3C221321470F33006519DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA3C221421470F33006519DE /* Build configuration list for PBXNativeTarget "PeerlabPDObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA3C221521470F33006519DE /* Debug */,
+				EA3C221621470F33006519DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA794C212261ED77002E58B3 /* Build configuration list for PBXNativeTarget "PeerlabPDObjCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA794C222261ED77002E58B3 /* Debug */,
+				EA794C232261ED77002E58B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA3C21EF21470F31006519DE /* Project object */;
+}

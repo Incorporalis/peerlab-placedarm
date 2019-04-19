@@ -37,6 +37,8 @@
 		EA3C22532148420D006519DE /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C22522148420D006519DE /* RepositoryTableViewCell.swift */; };
 		EA3C22552148422C006519DE /* RepositoryCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C22542148422C006519DE /* RepositoryCellViewModel.swift */; };
 		EA3C22602148558F006519DE /* RepositoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C225F2148558F006519DE /* RepositoriesViewModel.swift */; };
+		EA794C2B2261EDA1002E58B3 /* PeerlabPDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA794C2A2261EDA1002E58B3 /* PeerlabPDUITests.swift */; };
+		EA794C332261EDCB002E58B3 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA794C322261EDCB002E58B3 /* SnapshotHelper.swift */; };
 		EA7B5F9021E9F6A5008A2809 /* SearchViperPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7B5F8F21E9F6A5008A2809 /* SearchViperPresenter.swift */; };
 		EA7B5F9221E9F6FE008A2809 /* SearchViperInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7B5F9121E9F6FE008A2809 /* SearchViperInteractor.swift */; };
 		EA7B5F9421E9F77C008A2809 /* SearchViperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7B5F9321E9F77C008A2809 /* SearchViperViewController.swift */; };
@@ -61,6 +63,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = EA3C21F621470F31006519DE;
 			remoteInfo = IvanKramCodeIT;
+		};
+		EA794C2D2261EDA1002E58B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA3C21EF21470F31006519DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA3C21F621470F31006519DE;
+			remoteInfo = PeerlabPD;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -99,6 +108,10 @@
 		EA3C22522148420D006519DE /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableViewCell.swift; sourceTree = "<group>"; };
 		EA3C22542148422C006519DE /* RepositoryCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryCellViewModel.swift; sourceTree = "<group>"; };
 		EA3C225F2148558F006519DE /* RepositoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewModel.swift; sourceTree = "<group>"; };
+		EA794C282261EDA1002E58B3 /* PeerlabPDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeerlabPDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA794C2A2261EDA1002E58B3 /* PeerlabPDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeerlabPDUITests.swift; sourceTree = "<group>"; };
+		EA794C2C2261EDA1002E58B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA794C322261EDCB002E58B3 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		EA7B5F8F21E9F6A5008A2809 /* SearchViperPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViperPresenter.swift; sourceTree = "<group>"; };
 		EA7B5F9121E9F6FE008A2809 /* SearchViperInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViperInteractor.swift; sourceTree = "<group>"; };
 		EA7B5F9321E9F77C008A2809 /* SearchViperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViperViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +144,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C06DCF36FEE5AADDA211069A /* Pods_PeerlabPD.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA794C252261EDA1002E58B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +201,7 @@
 			children = (
 				EA3C21F921470F31006519DE /* PeerlabPD */,
 				EA2B0EDA2233C52F0087295A /* PeerlabPDTests */,
+				EA794C292261EDA1002E58B3 /* PeerlabPDUITests */,
 				EA3C21F821470F31006519DE /* Products */,
 				F5E3D4849E6D14EB6378A737 /* Pods */,
 				F284A168E4E08ECC3A5E53C6 /* Frameworks */,
@@ -192,6 +213,7 @@
 			children = (
 				EA3C21F721470F31006519DE /* PeerlabPD.app */,
 				EA2B0ED92233C52F0087295A /* PeerlabPDTests.xctest */,
+				EA794C282261EDA1002E58B3 /* PeerlabPDUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -385,6 +407,16 @@
 				EA3C22542148422C006519DE /* RepositoryCellViewModel.swift */,
 			);
 			path = Repository;
+			sourceTree = "<group>";
+		};
+		EA794C292261EDA1002E58B3 /* PeerlabPDUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EA794C322261EDCB002E58B3 /* SnapshotHelper.swift */,
+				EA794C2A2261EDA1002E58B3 /* PeerlabPDUITests.swift */,
+				EA794C2C2261EDA1002E58B3 /* Info.plist */,
+			);
+			path = PeerlabPDUITests;
 			sourceTree = "<group>";
 		};
 		EA7B5F8921E9F608008A2809 /* SearchViper */ = {
@@ -594,12 +626,31 @@
 			productReference = EA3C21F721470F31006519DE /* PeerlabPD.app */;
 			productType = "com.apple.product-type.application";
 		};
+		EA794C272261EDA1002E58B3 /* PeerlabPDUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA794C312261EDA1002E58B3 /* Build configuration list for PBXNativeTarget "PeerlabPDUITests" */;
+			buildPhases = (
+				EA794C242261EDA1002E58B3 /* Sources */,
+				EA794C252261EDA1002E58B3 /* Frameworks */,
+				EA794C262261EDA1002E58B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA794C2E2261EDA1002E58B3 /* PBXTargetDependency */,
+			);
+			name = PeerlabPDUITests;
+			productName = PeerlabPDUITests;
+			productReference = EA794C282261EDA1002E58B3 /* PeerlabPDUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		EA3C21EF21470F31006519DE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				DefaultBuildSystemTypeForWorkspace = Original;
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = IvanKram;
@@ -610,6 +661,10 @@
 					};
 					EA3C21F621470F31006519DE = {
 						CreatedOnToolsVersion = 9.4.1;
+					};
+					EA794C272261EDA1002E58B3 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = EA3C21F621470F31006519DE;
 					};
 				};
 			};
@@ -628,6 +683,7 @@
 			targets = (
 				EA3C21F621470F31006519DE /* PeerlabPD */,
 				EA2B0ED82233C52F0087295A /* PeerlabPDTests */,
+				EA794C272261EDA1002E58B3 /* PeerlabPDUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -647,6 +703,13 @@
 				EA3C220521470F33006519DE /* LaunchScreen.storyboard in Resources */,
 				EA3C220221470F33006519DE /* Assets.xcassets in Resources */,
 				EA3C220021470F31006519DE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA794C262261EDA1002E58B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -751,6 +814,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EA794C242261EDA1002E58B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA794C2B2261EDA1002E58B3 /* PeerlabPDUITests.swift in Sources */,
+				EA794C332261EDCB002E58B3 /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -758,6 +830,11 @@
 			isa = PBXTargetDependency;
 			target = EA3C21F621470F31006519DE /* PeerlabPD */;
 			targetProxy = EA2B0EDE2233C52F0087295A /* PBXContainerItemProxy */;
+		};
+		EA794C2E2261EDA1002E58B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA3C21F621470F31006519DE /* PeerlabPD */;
+			targetProxy = EA794C2D2261EDA1002E58B3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -980,6 +1057,49 @@
 			};
 			name = Release;
 		};
+		EA794C2F2261EDA1002E58B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 363TUX9KUK;
+				INFOPLIST_FILE = PeerlabPDUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.IvanKram.tets.PeerlabPDUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PeerlabPD;
+			};
+			name = Debug;
+		};
+		EA794C302261EDA1002E58B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 363TUX9KUK;
+				INFOPLIST_FILE = PeerlabPDUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.IvanKram.tets.PeerlabPDUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PeerlabPD;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1006,6 +1126,15 @@
 			buildConfigurations = (
 				EA3C221521470F33006519DE /* Debug */,
 				EA3C221621470F33006519DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA794C312261EDA1002E58B3 /* Build configuration list for PBXNativeTarget "PeerlabPDUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA794C2F2261EDA1002E58B3 /* Debug */,
+				EA794C302261EDA1002E58B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
