@@ -27,3 +27,4 @@ xcuserdata/
 *.ipa
 *.dSYM.zip
 *.dSYM
+fastlane/output

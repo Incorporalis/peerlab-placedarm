@@ -12,7 +12,7 @@ import XCTest
 class RepositoriesLoadingTestCase: XCTestCase {
     func testInitialState() {
 		let state = State.initial
-    XCTAssertTrue(state.repositories.allRepositories.isEmpty)
+    	XCTAssertTrue(state.repositories.allRepositories.isEmpty)
 		XCTAssertTrue(state.loading == .none)
     }
 

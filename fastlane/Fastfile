@@ -6,61 +6,65 @@ ENV["FASTLANE_XCODE_LIST_TIMEOUT"] = "120"
 default_platform :ios
 
 json = File.open("screenshots.json", "r").read
+apps = JSON.parse(json)["appParams"]
+
 ENV["SCREENSHOTS_JSON"] = json
 
 $params
+$output_directory = "./Fastlane/output"
 
 platform :ios do
-	before_all do
+  before_all do
 
-  	end
+    end
 
-	lane :buildForFabric do |options|
-		$params = apps[options[:label]]
-		ENV["APP"] = options[:label]
+  lane :buildForFabric do |options|
+    $params = apps[options[:label]]
+    ENV["APP"] = options[:label]
 
-		bundle_id = product_bundle_id
+    bundle_id = product_bundle_id
 
-		puts($params)
+    puts($params)
 
-		snapshot(
-		      clean: true,
-		      reinstall_app: true,
-		      workspace: "./PeerlabPD.xcworkspace",
-		      scheme: "#{$params["scheme"]}UITests",
-		      app_identifier: bundle_id,
-		      output_directory: "Fastlane/screenshots/#{$params["scheme"]}",
-		    launch_arguments: [
-		      "-RepositoryIndex #{$params["repositoryIndex"]}
-		      -RepositoryName #{$params["repositoryName"]}"
-		    ]
-			)
-		Dir.chdir("./screenshots/#{$params["scheme"]}/") do
-	      frameit(
-	        silver: true,
-	        path: '.'
-	      )
-	    end
+    snapshot(
+      clean: true,
+      reinstall_app: true,
+      workspace: "./PeerlabPD.xcworkspace",
+      scheme: "#{$params["scheme"]}UITests",
+      app_identifier: bundle_id,
+      output_directory: "Fastlane/screenshots/#{$params["scheme"]}",
+      launch_arguments: [
+        "-RepositoryIndex #{$params["repositoryIndex"]}
+        -RepositoryName #{$params["repositoryName"]}"
+      ]
+    )
+    
+    Dir.chdir("./screenshots/#{$params["scheme"]}/") do
+      frameit(
+        silver: true,
+        path: '.'
+      )
+    end
 
-		product_create_archive
-    	product_build_number
-		make_ipa_for_appstore
+    product_create_archive
+    product_build_number
+    make_ipa_for_appstore
 
-		upload_to_app_store(
-	      ipa: ipa_path,
-	      skip_binary_upload: sendBinary,
-	      skip_metadata: true,
-	      screenshots_path: "Fastlane/screenshots/#{$params["scheme"]}",
-	      app_identifier: bundle_id,
-	      force: true,
-	      app_version: product_version_number,
-	      username: $username
-	    )
-	end
-	
-	after_all do
-    	clean_build_artifacts
-  	end
+    upload_to_app_store(
+      ipa: ipa_path,
+      skip_binary_upload: sendBinary,
+      skip_metadata: true,
+      screenshots_path: "Fastlane/screenshots/#{$params["scheme"]}",
+      app_identifier: bundle_id,
+      force: true,
+      app_version: product_version_number,
+      username: $username
+    )
+  end
+  
+  after_all do
+    clean_build_artifacts
+  end
 
 
   def product_build_number
@@ -119,6 +123,10 @@ platform :ios do
 
   def ipa_path
     return "#{build_output_path}/#{$params["scheme"]}.ipa"
+  end
+
+  def build_output_path
+    return "#{$output_directory}/#{$params["scheme"]}"
   end
 
   def derived_data_path
