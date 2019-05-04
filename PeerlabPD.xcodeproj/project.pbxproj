@@ -17,6 +17,9 @@
 		EA2B0ED32233C1C30087295A /* RepositoriesStartLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2B0ED22233C1C30087295A /* RepositoriesStartLoading.swift */; };
 		EA2B0EDC2233C52F0087295A /* PeerlabDPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2B0EDB2233C52F0087295A /* PeerlabDPTests.swift */; };
 		EA2B0EE42233C5640087295A /* RepositoriesLoadingTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2B0EE32233C5640087295A /* RepositoriesLoadingTestCase.swift */; };
+		EA2E0B58227D84B0005732D5 /* PeerlabPD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA2E0B56227D84B0005732D5 /* PeerlabPD.xcdatamodeld */; };
+		EA2E0B5B227D879B005732D5 /* DBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E0B5A227D879B005732D5 /* DBService.swift */; };
+		EA2E0B5E227D8A87005732D5 /* Fetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E0B5D227D8A87005732D5 /* Fetch.swift */; };
 		EA3C21FB21470F31006519DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C21FA21470F31006519DE /* AppDelegate.swift */; };
 		EA3C21FD21470F31006519DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C21FC21470F31006519DE /* ViewController.swift */; };
 		EA3C220021470F31006519DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA3C21FE21470F31006519DE /* Main.storyboard */; };
@@ -86,6 +89,9 @@
 		EA2B0EDB2233C52F0087295A /* PeerlabDPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeerlabDPTests.swift; sourceTree = "<group>"; };
 		EA2B0EDD2233C52F0087295A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA2B0EE32233C5640087295A /* RepositoriesLoadingTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesLoadingTestCase.swift; sourceTree = "<group>"; };
+		EA2E0B57227D84B0005732D5 /* PeerlabPD.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PeerlabPD.xcdatamodel; sourceTree = "<group>"; };
+		EA2E0B5A227D879B005732D5 /* DBService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBService.swift; sourceTree = "<group>"; };
+		EA2E0B5D227D8A87005732D5 /* Fetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fetch.swift; sourceTree = "<group>"; };
 		EA3C21F721470F31006519DE /* PeerlabPD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeerlabPD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA3C21FA21470F31006519DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA3C21FC21470F31006519DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -196,6 +202,31 @@
 			path = PeerlabPDTests;
 			sourceTree = "<group>";
 		};
+		EA2E0B55227D847E005732D5 /* Persistance */ = {
+			isa = PBXGroup;
+			children = (
+				EA2E0B56227D84B0005732D5 /* PeerlabPD.xcdatamodeld */,
+			);
+			path = Persistance;
+			sourceTree = "<group>";
+		};
+		EA2E0B59227D8768005732D5 /* DBService */ = {
+			isa = PBXGroup;
+			children = (
+				EA2E0B5C227D8A74005732D5 /* Fetch */,
+				EA2E0B5A227D879B005732D5 /* DBService.swift */,
+			);
+			path = DBService;
+			sourceTree = "<group>";
+		};
+		EA2E0B5C227D8A74005732D5 /* Fetch */ = {
+			isa = PBXGroup;
+			children = (
+				EA2E0B5D227D8A87005732D5 /* Fetch.swift */,
+			);
+			path = Fetch;
+			sourceTree = "<group>";
+		};
 		EA3C21EE21470F31006519DE = {
 			isa = PBXGroup;
 			children = (
@@ -221,6 +252,7 @@
 		EA3C21F921470F31006519DE /* PeerlabPD */ = {
 			isa = PBXGroup;
 			children = (
+				EA2E0B55227D847E005732D5 /* Persistance */,
 				EA9EB0F02233CB4F002AE18C /* Redux */,
 				EA3C221E21471605006519DE /* AppFiles */,
 				EA3C22372147223D006519DE /* BaseClasses */,
@@ -301,6 +333,7 @@
 		EA3C222F21471F7E006519DE /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				EA2E0B59227D8768005732D5 /* DBService */,
 				EA3C223021471F86006519DE /* Search */,
 			);
 			path = Services;
@@ -782,6 +815,7 @@
 				EA9EB0F52233D66E002AE18C /* ReduxVCPresenter.swift in Sources */,
 				EA3C222321471774006519DE /* User.swift in Sources */,
 				EAB2A1B322614C8500FA8AAF /* ItemViperInteractor.swift in Sources */,
+				EA2E0B5B227D879B005732D5 /* DBService.swift in Sources */,
 				EA3C22552148422C006519DE /* RepositoryCellViewModel.swift in Sources */,
 				EA2B0ED12233C1810087295A /* RepositoriesFailLoading.swift in Sources */,
 				EA7B5F9621E9F7F9008A2809 /* SearchViperAssembly.swift in Sources */,
@@ -795,6 +829,7 @@
 				EA2B0ECA2233BFA80087295A /* StateLoading.swift in Sources */,
 				EA2B0EC62233BF3F0087295A /* State.swift in Sources */,
 				EA3C224D21472B1A006519DE /* UIAlerController.swift in Sources */,
+				EA2E0B5E227D8A87005732D5 /* Fetch.swift in Sources */,
 				EA7B5F9421E9F77C008A2809 /* SearchViperViewController.swift in Sources */,
 				EA3C222E21471D1B006519DE /* NetworkDispatcher.swift in Sources */,
 				EA9EB0F32233D2CF002AE18C /* Store.swift in Sources */,
@@ -809,6 +844,7 @@
 				EA3C224721472253006519DE /* RouterAsembly.swift in Sources */,
 				EA3C22532148420D006519DE /* RepositoryTableViewCell.swift in Sources */,
 				EA7B5F9221E9F6FE008A2809 /* SearchViperInteractor.swift in Sources */,
+				EA2E0B58227D84B0005732D5 /* PeerlabPD.xcdatamodeld in Sources */,
 				EA3C223621471FE8006519DE /* SearchRequest.swift in Sources */,
 				EAB2A1B022614C7C00FA8AAF /* ItemViperAssembly.swift in Sources */,
 			);
@@ -1144,6 +1180,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EA2E0B56227D84B0005732D5 /* PeerlabPD.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EA2E0B57227D84B0005732D5 /* PeerlabPD.xcdatamodel */,
+			);
+			currentVersion = EA2E0B57227D84B0005732D5 /* PeerlabPD.xcdatamodel */;
+			path = PeerlabPD.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = EA3C21EF21470F31006519DE /* Project object */;
 }

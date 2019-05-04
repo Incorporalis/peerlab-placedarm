@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 import Foundation
 
@@ -49,13 +50,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func loadDependencies() -> RouterDependencies {
         let env                = Environment(.PROD)
         let errorHandler       = NetworkErrorHandler()
+
         let networkDispatcher  = NetworkDispatcher(environment: env, errorHandler: errorHandler)
-        let searchService      = SearchService(with: networkDispatcher)
+
+        let container          = NSPersistentContainer(name: "PeerlabPD")
+        let dbService          = DBService(with: container)
+
+        let searchService      = SearchService(with: networkDispatcher, dbService: dbService)
+
         let routerAssembly	   = RouterAssembly()
 
         return RouterDependencies(
             routerAssembly: routerAssembly,
-            searchService: searchService
+            searchService: searchService,
+            dbService: dbService
         )
     }
 

@@ -12,6 +12,7 @@ struct RouterDependencies {
 
     let routerAssembly: IRouterAssembly
     let searchService: ISearchService
+    let dbService: IDBService
 
 }
 
