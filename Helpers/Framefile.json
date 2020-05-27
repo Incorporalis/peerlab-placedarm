@@ -1,0 +1,20 @@
+{
+  "default": {
+    "keyword": {
+      "color": "#FFFFFF"
+    },
+    "title": {
+      "color": "#FFFFFF"
+    },
+    "padding": "100x50",
+    "background": "./background.jpg",
+    "font_scale_factor": 0.15
+  },
+
+  "data": [
+    {
+      "filter": "XS",
+      "padding": "25x50"
+    }
+  ]
+}

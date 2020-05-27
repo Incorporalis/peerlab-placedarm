@@ -1,0 +1,22 @@
+{
+  "appParams": {
+    "peerlabOne": { 
+      "scheme": "PeerlabPD",
+      "repositoryIndex": 0,
+      "languages": [
+        "en-US",
+        "uk"
+      ]
+    },
+    "peerlabTwo": { 
+      "scheme": "PeerlabPDObjC",
+      "repositoryIndex": 3,
+      "languages": [
+        "ru"
+      ]
+    }
+  }
+}
+
+
+// python -m SimpleHTTPServer

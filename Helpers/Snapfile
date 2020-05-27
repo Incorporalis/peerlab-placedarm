@@ -1,0 +1,13 @@
+devices([
+  "iPhone 8 Plus", #5.5"
+  "iPhone XS Max"  #6.5"
+])
+
+apps = JSON.parse(ENV["SCREENSHOTS_JSON"])["appParams"]
+languages(apps[ENV["APP"]]["languages"])
+
+clear_previous_screenshots(true)
+
+#screenshots/{scheme}/{lang}/title.strings
+#screenshots/{scheme}/background.jpg
+#screenshots/{scheme}/Framefile.json

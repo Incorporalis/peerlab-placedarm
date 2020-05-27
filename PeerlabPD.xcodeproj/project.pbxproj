@@ -40,6 +40,7 @@
 		EA3C22532148420D006519DE /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C22522148420D006519DE /* RepositoryTableViewCell.swift */; };
 		EA3C22552148422C006519DE /* RepositoryCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C22542148422C006519DE /* RepositoryCellViewModel.swift */; };
 		EA3C22602148558F006519DE /* RepositoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C225F2148558F006519DE /* RepositoriesViewModel.swift */; };
+		EA6637E322823BDE00E52338 /* PeerlabPOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6637E222823BDE00E52338 /* PeerlabPOUITests.swift */; };
 		EA794C2B2261EDA1002E58B3 /* PeerlabPDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA794C2A2261EDA1002E58B3 /* PeerlabPDUITests.swift */; };
 		EA794C332261EDCB002E58B3 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA794C322261EDCB002E58B3 /* SnapshotHelper.swift */; };
 		EA7B5F9021E9F6A5008A2809 /* SearchViperPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7B5F8F21E9F6A5008A2809 /* SearchViperPresenter.swift */; };
@@ -66,6 +67,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = EA3C21F621470F31006519DE;
 			remoteInfo = IvanKramCodeIT;
+		};
+		EA6637E522823BDE00E52338 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA3C21EF21470F31006519DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA3C21F621470F31006519DE;
+			remoteInfo = PeerlabPD;
 		};
 		EA794C2D2261EDA1002E58B3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -114,6 +122,9 @@
 		EA3C22522148420D006519DE /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableViewCell.swift; sourceTree = "<group>"; };
 		EA3C22542148422C006519DE /* RepositoryCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryCellViewModel.swift; sourceTree = "<group>"; };
 		EA3C225F2148558F006519DE /* RepositoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewModel.swift; sourceTree = "<group>"; };
+		EA6637E022823BDE00E52338 /* PeerlabPOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeerlabPOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA6637E222823BDE00E52338 /* PeerlabPOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeerlabPOUITests.swift; sourceTree = "<group>"; };
+		EA6637E422823BDE00E52338 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA794C282261EDA1002E58B3 /* PeerlabPDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeerlabPDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA794C2A2261EDA1002E58B3 /* PeerlabPDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeerlabPDUITests.swift; sourceTree = "<group>"; };
 		EA794C2C2261EDA1002E58B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -150,6 +161,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C06DCF36FEE5AADDA211069A /* Pods_PeerlabPD.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA6637DD22823BDE00E52338 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +251,7 @@
 				EA3C21F921470F31006519DE /* PeerlabPD */,
 				EA2B0EDA2233C52F0087295A /* PeerlabPDTests */,
 				EA794C292261EDA1002E58B3 /* PeerlabPDUITests */,
+				EA6637E122823BDE00E52338 /* PeerlabPOUITests */,
 				EA3C21F821470F31006519DE /* Products */,
 				F5E3D4849E6D14EB6378A737 /* Pods */,
 				F284A168E4E08ECC3A5E53C6 /* Frameworks */,
@@ -245,6 +264,7 @@
 				EA3C21F721470F31006519DE /* PeerlabPD.app */,
 				EA2B0ED92233C52F0087295A /* PeerlabPDTests.xctest */,
 				EA794C282261EDA1002E58B3 /* PeerlabPDUITests.xctest */,
+				EA6637E022823BDE00E52338 /* PeerlabPOUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -440,6 +460,15 @@
 				EA3C22542148422C006519DE /* RepositoryCellViewModel.swift */,
 			);
 			path = Repository;
+			sourceTree = "<group>";
+		};
+		EA6637E122823BDE00E52338 /* PeerlabPOUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EA6637E222823BDE00E52338 /* PeerlabPOUITests.swift */,
+				EA6637E422823BDE00E52338 /* Info.plist */,
+			);
+			path = PeerlabPOUITests;
 			sourceTree = "<group>";
 		};
 		EA794C292261EDA1002E58B3 /* PeerlabPDUITests */ = {
@@ -659,6 +688,24 @@
 			productReference = EA3C21F721470F31006519DE /* PeerlabPD.app */;
 			productType = "com.apple.product-type.application";
 		};
+		EA6637DF22823BDE00E52338 /* PeerlabPOUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA6637E922823BDE00E52338 /* Build configuration list for PBXNativeTarget "PeerlabPOUITests" */;
+			buildPhases = (
+				EA6637DC22823BDE00E52338 /* Sources */,
+				EA6637DD22823BDE00E52338 /* Frameworks */,
+				EA6637DE22823BDE00E52338 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA6637E622823BDE00E52338 /* PBXTargetDependency */,
+			);
+			name = PeerlabPOUITests;
+			productName = PeerlabPOUITests;
+			productReference = EA6637E022823BDE00E52338 /* PeerlabPOUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		EA794C272261EDA1002E58B3 /* PeerlabPDUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA794C312261EDA1002E58B3 /* Build configuration list for PBXNativeTarget "PeerlabPDUITests" */;
@@ -684,7 +731,7 @@
 			isa = PBXProject;
 			attributes = {
 				DefaultBuildSystemTypeForWorkspace = Original;
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = IvanKram;
 				TargetAttributes = {
@@ -694,6 +741,10 @@
 					};
 					EA3C21F621470F31006519DE = {
 						CreatedOnToolsVersion = 9.4.1;
+					};
+					EA6637DF22823BDE00E52338 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = EA3C21F621470F31006519DE;
 					};
 					EA794C272261EDA1002E58B3 = {
 						CreatedOnToolsVersion = 10.1;
@@ -717,6 +768,7 @@
 				EA3C21F621470F31006519DE /* PeerlabPD */,
 				EA2B0ED82233C52F0087295A /* PeerlabPDTests */,
 				EA794C272261EDA1002E58B3 /* PeerlabPDUITests */,
+				EA6637DF22823BDE00E52338 /* PeerlabPOUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -736,6 +788,13 @@
 				EA3C220521470F33006519DE /* LaunchScreen.storyboard in Resources */,
 				EA3C220221470F33006519DE /* Assets.xcassets in Resources */,
 				EA3C220021470F31006519DE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA6637DE22823BDE00E52338 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -850,6 +909,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EA6637DC22823BDE00E52338 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA6637E322823BDE00E52338 /* PeerlabPOUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EA794C242261EDA1002E58B3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -866,6 +933,11 @@
 			isa = PBXTargetDependency;
 			target = EA3C21F621470F31006519DE /* PeerlabPD */;
 			targetProxy = EA2B0EDE2233C52F0087295A /* PBXContainerItemProxy */;
+		};
+		EA6637E622823BDE00E52338 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA3C21F621470F31006519DE /* PeerlabPD */;
+			targetProxy = EA6637E522823BDE00E52338 /* PBXContainerItemProxy */;
 		};
 		EA794C2E2261EDA1002E58B3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1097,6 +1169,49 @@
 			};
 			name = Release;
 		};
+		EA6637E722823BDE00E52338 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 363TUX9KUK;
+				INFOPLIST_FILE = PeerlabPOUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.IvanKram.tets.PeerlabPOUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PeerlabPD;
+			};
+			name = Debug;
+		};
+		EA6637E822823BDE00E52338 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 363TUX9KUK;
+				INFOPLIST_FILE = PeerlabPOUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.IvanKram.tets.PeerlabPOUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PeerlabPD;
+			};
+			name = Release;
+		};
 		EA794C2F2261EDA1002E58B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1166,6 +1281,15 @@
 			buildConfigurations = (
 				EA3C221521470F33006519DE /* Debug */,
 				EA3C221621470F33006519DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA6637E922823BDE00E52338 /* Build configuration list for PBXNativeTarget "PeerlabPOUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA6637E722823BDE00E52338 /* Debug */,
+				EA6637E822823BDE00E52338 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

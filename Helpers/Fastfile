@@ -1,0 +1,181 @@
+fastlane_require 'xcodeproj'
+fastlane_require 'json'
+
+ENV["FASTLANE_XCODE_LIST_TIMEOUT"] = "120"
+
+default_platform :ios
+
+$username = "incorporalis.oxc@gmail.com"
+$output_directory = "./Fastlane/output"
+
+json = File.open("screenshots.json", "r").read
+ENV["SCREENSHOTS_JSON"] = json
+apps = JSON.parse(json)["appParams"]
+
+platform :ios do
+
+  before_all do
+
+  end
+
+
+
+
+  lane :buildRelease do |options|
+    ENV["APP"] = options[:label]
+    $params = apps[ENV["APP"]]
+
+    make_screenshots
+
+    product_create_archive
+    product_build_number
+    make_ipa_for_appstore
+
+    upload_result_to_appstore(true)
+  end
+
+  lane :screenshots do |options|
+    ENV["APP"] = options[:label]
+    $params = apps[ENV["APP"]]
+    make_screenshots
+  end
+
+  lane :frameitOnly do |options|
+    $params = apps[options[:label]]
+    frame_screenshots
+  end
+
+
+
+
+
+
+  after_all do
+    clean_build_artifacts
+  end
+
+
+
+
+
+
+  def make_screenshots
+    snapshot(
+      clean: true,
+      reinstall_app: true,
+      workspace: "./PeerlabPD.xcworkspace",
+      scheme: "#{$params["scheme"]}UITests",
+      derived_data_path: derived_data_path,
+      app_identifier: bundle_id,
+      output_directory: "Fastlane/screenshots/#{$params["scheme"]}",
+      launch_arguments: [
+        "-RepositoryIndex #{$params["repositoryIndex"]}"
+      ]
+    )
+
+    frame_screenshots
+
+    upload_result_to_appstore(false)
+  end
+
+  def frame_screenshots
+    Dir.chdir("./screenshots/#{$params["scheme"]}/") do
+      frameit(
+        silver: true,
+        path: '.'
+      )
+    end
+  end
+
+  def upload_result_to_appstore(sendBinary)
+    upload_to_app_store(
+      ipa: ipa_path,
+      skip_binary_upload: sendBinary,
+      skip_metadata: true,
+      screenshots_path: "Fastlane/screenshots/#{$params["scheme"]}",
+      app_identifier: bundle_id,
+      force: true,
+      app_version: product_version_number,
+      username: $username
+    )
+  end
+
+  def path_to_scheme_folder(path) 
+    path = path + $params["scheme"] if $params["isLabel"]
+    return "#{path}/#{$params["scheme"]}.xcodeproj"
+  end
+
+  def build_configuration
+    project = Xcodeproj::Project.open(path_to_scheme_folder("../"))
+    target = project.native_targets.find { |target| target.name == $params["scheme"] }
+
+    if (!target) then
+      raise "There's no '#{$params["scheme"]}' target in the project."
+    end
+
+    return target.build_configurations.first
+  end
+
+  def product_bundle_id
+    return build_configuration.build_settings['PRODUCT_BUNDLE_IDENTIFIER']
+  end
+
+  def product_version_number
+    return get_version_number(
+      xcodeproj: path_to_scheme_folder("./"),
+      target: $params["scheme"]
+    )
+  end
+
+  def product_build_number
+    build_number = number_of_commits(all: true)
+    act(
+      archive_path: "#{archive_path}.xcarchive",
+      plist_file: "Info.plist",
+      plist_values: {
+        ":CFBundleVersion" => build_number
+      }
+    )
+  end
+
+  def make_ipa_for_appstore
+    gym(
+      skip_build_archive: true,
+      scheme: $params["scheme"],
+      derived_data_path: derived_data_path,
+      output_directory: "#{$output_directory}/#{$params["scheme"]}",
+      archive_path: "#{archive_path}.xcarchive"
+      )
+  end
+
+  def product_create_archive
+    gym(
+      skip_package_ipa: true,
+      scheme: $params["scheme"],
+      derived_data_path: derived_data_path,
+      output_directory: build_output_path,
+      archive_path: archive_path
+      )
+  end
+
+  def bundle_id
+      return product_bundle_id
+  end
+
+  def ipa_path
+    return "#{build_output_path}/#{$params["scheme"]}.ipa"
+  end
+
+  def build_output_path
+    return "#{$output_directory}/#{$params["scheme"]}"
+  end
+
+  def archive_path 
+    return "#{$output_directory}/archives/#{$params["scheme"]}"
+  end
+
+  def derived_data_path
+    return "#{$output_directory}/derivedData"
+  end
+
+end
